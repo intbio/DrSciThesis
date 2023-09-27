@@ -1,0 +1,56 @@
+% Новые переменные, которые могут использоваться во всём проекте
+% ГОСТ 7.0.11-2011
+% 9.2 Оформление текста автореферата диссертации
+% 9.2.1 Общая характеристика работы включает в себя следующие основные структурные
+% элементы:
+% актуальность темы исследования;
+\newcommand{\actualityTXT}{Актуальность темы}
+% степень ее разработанности;
+\newcommand{\progressTXT}{Степень разработанности темы исследований}
+% цели и задачи;
+\newcommand{\aimTXT}{Целью}
+\newcommand{\objectTXT}{Объект и предмет исследований.}
+\newcommand{\tasksTXT}{задачи}
+% научную новизну;
+\newcommand{\noveltyTXT}{Научная новизна}
+% теоретическую и практическую значимость работы;
+%\newcommand{\influenceTXT}{Теоретическая и практическая значимость}
+% или чаще используют просто
+\newcommand{\influenceTXT}{Теоретическая и практическая значимость}
+% методологию и методы исследования;
+\newcommand{\methodsTXT}{Методология и методы исследования}
+% положения, выносимые на защиту;
+\newcommand{\defpositionsTXT}{Основные положения, выносимые на~защиту:}
+% степень достоверности и апробацию результатов.
+\newcommand{\reliabilityTXT}{Достоверность}
+\newcommand{\probationTXT}{Апробация работы.}
+
+\newcommand{\contributionTXT}{Личный вклад.}
+\newcommand{\publicationsTXT}{Публикации.}
+\newcommand{\acknowledgeTXT}{Благодарности}
+
+%%% Заголовки библиографии:
+
+% для автореферата:
+\ifdefined\DISSER
+%\newcommand{\bibtitleauthor}{Публикации автора по теме диссертации}
+\newcommand{\bibtitleauthor}{}
+\else
+%\newcommand{\bibtitleauthor}{Основные публикации Шайтана Алексея Константиновича по теме диссертации в рецензируемых научных изданиях, индексируемых в базах данных Web of Science, Scopus, RSCI, рекомендованных для защиты в диссертационном совете МГУ по специальности 03.01.09 - <<Математическая биология, биоинформатика>>}
+\newcommand{\bibtitleauthor}{}
+
+\fi
+% для стиля библиографии `\insertbiblioauthorgrouped`
+\newcommand{\bibtitleauthorvak}{В изданиях из списка ВАК РФ}
+\newcommand{\bibtitleauthorscopus}{В изданиях, входящих в международную базу цитирования Scopus}
+\newcommand{\bibtitleauthorwos}{В изданиях, входящих в международную базу цитирования Web of Science}
+\newcommand{\bibtitleauthorother}{В прочих изданиях}
+\newcommand{\bibtitleauthorconf}{В сборниках трудов конференций}
+\newcommand{\bibtitleauthorpatent}{Зарегистрированные патенты}
+\newcommand{\bibtitleauthorprogram}{Зарегистрированные программы для ЭВМ}
+
+% для стиля библиографии `\insertbiblioauthorimportant`:
+\newcommand{\bibtitleauthorimportant}{Наиболее значимые \protect\MakeLowercase\bibtitleauthor}
+
+% для списка литературы в диссертации и списка чужих работ в автореферате:
+\newcommand{\bibtitlefull}{Список литературы} % (ГОСТ Р 7.0.11-2011, 4)

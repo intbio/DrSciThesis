@@ -1,0 +1,1 @@
+ffmpeg -i 1mus.mp4 -filter:v "crop=430:700:110:0" 1mus%d.jpg

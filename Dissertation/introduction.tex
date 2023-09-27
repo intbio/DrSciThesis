@@ -1,0 +1,207 @@
+\chapter*{Введение}                         % Заголовок
+\addcontentsline{toc}{chapter}{Введение}    % Добавляем его в оглавление
+
+\newcommand{\actuality}{}
+\newcommand{\progress}{}
+\newcommand{\aim}{{\textbf\aimTXT}}
+\newcommand{\object}{{\textbf\objectTXT}}
+\newcommand{\tasks}{\textbf{\tasksTXT}}
+\newcommand{\novelty}{\textbf{\noveltyTXT}}
+\newcommand{\influence}{\textbf{\influenceTXT}}
+\newcommand{\methods}{\textbf{\methodsTXT}}
+\newcommand{\defpositions}{\textbf{\defpositionsTXT}}
+\newcommand{\reliability}{\textbf{\reliabilityTXT}}
+\newcommand{\probation}{\textbf{\probationTXT}}
+\newcommand{\contribution}{\textbf{\contributionTXT}}
+\newcommand{\publications}{\textbf{\publicationsTXT}}
+\newcommand{\acknowledge}{\textbf{\acknowledgeTXT}}
+
+\input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
+
+
+
+
+
+%%% Реализация пакетом biblatex через движок biber
+ \begin{refsection}[bl-author, bl-registered]
+  % \begin{refsection}[bl-author]
+
+        % Это refsection=1.
+        % Процитированные здесь работы:
+        %  * подсчитываются, для автоматического составления фразы "Основные результаты ..."
+        %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthor` или `\insertbiblioauthorgrouped`
+        %  * нумеруются там в зависимости от порядка команд `\printbibliography` в этом разделе.
+        %  * при использовании `\insertbiblioauthorgrouped`, порядок команд `\printbibliography` в нём должен быть тем же (см. biblio/biblatex.tex)
+        %
+        % Невидимый библиографический список для подсчёта количества публикаций:
+        \printbibliography[heading=nobibheading, section=1, env=countauthorvak,          keyword=biblioauthorvak]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorwos,          keyword=biblioauthorwos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorscopus,       keyword=biblioauthorscopus]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorconf,         keyword=biblioauthorconf]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorother,        keyword=biblioauthorother]%
+         \printbibliography[heading=nobibheading, section=1, env=countregistered,         keyword=biblioregistered]%
+       \printbibliography[heading=nobibheading, section=1, env=countauthorpatent,       keyword=biblioauthorpatent]%
+         \printbibliography[heading=nobibheading, section=1, env=countauthorprogram,      keyword=biblioauthorprogram]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthor,             keyword=biblioauthor]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorvakscopuswos, filter=vakscopuswos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorscopuswos,    filter=scopuswos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorarticle,    keyword=article]%
+        %
+        \nocite{*}%
+    \end{refsection}%
+        {\publications} Основные результаты по теме диссертации изложены в%~\arabic{citeauthor}~печатных работах 
+        \nocite{hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011,%=======
+          armeev_integrative_2020,kniazeva_analyzing_2020,armeev_analyzing_2019,gribkova_construction_2019,armeev_python_2019,gorkovets_mutual_2018,shaytan_microsecond_2017,shaytan_nucleosome_2016,shaytan_combined_2015,shaytan_polymorphism_2015,kasimova_investigation_2014,kasimova_molecular_2014,chang_pausing_2013,%далее диссертации
+          %не вак
+          armeev_abstract_2019,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_water_2014,chang_structural_2013,armeev_modelirovanie_2013}
+        35 статьях в рецензируемых научных изданиях, индексируемых в базах данных Web of Science, Scopus, RSCI \cite{hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011} (дополнительно опубликованы еще две статьи \cite{greshnova_sinteticheskaya_2019,armeev_modelirovanie_2013}).
+        \ifnum \value{citeregistered}=1%
+           \ifnum \value{citeauthorpatent}=1%
+               Зарегистрирован \arabic{citeauthorpatent} патент.
+           \fi%
+           \ifnum \value{citeauthorprogram}=1%
+               Зарегистрирована \arabic{citeauthorprogram} программа для ЭВМ.
+           \fi%
+        \fi%
+        \ifnum \value{citeregistered}>1%
+           Зарегистрированы\ %
+           \ifnum \value{citeauthorpatent}>0%
+           \formbytotal{citeauthorpatent}{патент}{}{а}{} \cite{patbib1}\sloppy%
+           \ifnum \value{citeauthorprogram}=0 . \else \ и~\fi%
+           \fi%
+           \ifnum \value{citeauthorprogram}>0%
+           \formbytotal{citeauthorprogram}{программ}{а}{ы}{} для ЭВМ \cite{progbib1}.
+           \fi%
+        \fi%
+        % К публикациям, в которых излагаются основные научные результаты диссертации на соискание учёной
+        % степени, в рецензируемых изданиях приравниваются патенты на изобретения, патенты (свидетельства) на
+        % полезную модель, патенты на промышленный образец, патенты на селекционные достижения, свидетельства
+        % на программу для электронных вычислительных машин, базу данных, топологию интегральных микросхем,
+        % зарегистрированные в установленном порядке.(в ред. Постановления Правительства РФ от 21.04.2016 N 335)
+  
+
+ \begin{refsection}[bl-author, bl-registered]
+ % \begin{refsection}[bl-author]
+        % Это refsection=2.
+        % Процитированные здесь работы:
+        %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthorimportant`.
+        %  * ни на что не влияют в противном случае
+      %  \nocite{vakbib2}%vak
+       %AKShPAT  \nocite{patbib1}%patent
+     %AKShPAT   \nocite{progbib1}%program
+      %  \nocite{bib1}%other
+\nocite{
+        %high impact in right order (do not remove or change)
+        %64 статьи и тезисы + 2 диссертации (тут не учитываются)
+        %VAK изданий 56, не вак 8, тезисов 17, статей 47
+        %NB no of these should appear in othercites.bib (!) - they will then disappear from author list of papers
+hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011,%=======
+         armeev_integrative_2020,kniazeva_analyzing_2020,armeev_analyzing_2019,gribkova_construction_2019,armeev_python_2019,gorkovets_mutual_2018,shaytan_microsecond_2017,shaytan_nucleosome_2016,shaytan_combined_2015,shaytan_polymorphism_2015,kasimova_investigation_2014,kasimova_molecular_2014,chang_pausing_2013,%далее диссертации
+          %не вак
+          armeev_abstract_2019,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_water_2014,chang_structural_2013,armeev_modelirovanie_2013,%патенты
+          patbib1,progbib1}
+    \end{refsection}%
+        %
+        % Всё, что вне этих двух refsection, это refsection=0,
+        %  * для диссертации - это нормальные ссылки, попадающие в обычную библиографию
+        %  * для автореферата:
+        %     * при usefootcite==0, ссылка корректно сработает только для источника из `external.bib`. Для своих работ --- напечатает "[0]" (и даже Warning не вылезет).
+        %     * при usefootcite==1, ссылка сработает нормально. В авторской библиографии будут только процитированные в refsection=0 работы.
+
+
+
+
+
+
+
+
+
+
+\underline{\textbf{Объем и структура работы.}} Диссертация состоит из~введения, пяти глав и заключения.
+Первая глава посвящена обзору методов исследований, примененных и разработанных в ходе работы, обсуждается место методов молекулярного и интегративного моделирования в исследовательском процессе. Вторая глава посвящена применению методов суперкомпьютерной молекулярной динамики для изучения динамики нуклеосом.  Третья глава посвящена разработке методов интегративного моделирования комплексов белков с ДНК на основе данных расщепления ДНК гидроксильными радикалами. Четвертая глава посвящена построению моделей комплексов нуклеосом с белками хроматина. Пятая глава посвящена моделированию амилоидоподобных фибрилл.
+%% на случай ошибок оставляю исходный кусок на месте, закомментированным
+%Полный объём диссертации составляет  \ref*{TotPages}~страницу
+%с~\totalfigures{}~рисунками и~\totaltables{}~таблицами. Список литературы
+%содержит \total{citenum}~наименований.
+%
+Полный объём диссертации составляет
+\formbytotal{TotPages}{страниц}{у}{ы}{}, включая
+\formbytotal{totalcount@figure}{рисун}{ок}{ка}{ков} и
+\formbytotal{totalcount@table}{таблиц}{у}{ы}{}.
+Список литературы содержит
+\formbytotal{citeexternal}{наименован}{ие}{ия}{ий}.
+
+%AKSh весь блок ниже вставлен, чтобы давать в конце введения список работ.
+%Но есто проблема - гиперссылки на них не работают правильно.
+%ПОЭТОМУ БЛОК НИЖЕ ЗАКОММЕНТИРОВАН - и дается единый список литературы в конце.
+\subsubsection*{}
+\textbf{\large Публикации автора по теме диссертации}\footnote{В скобках приведен объем публикации в печатных листах и вклад автора в печатных листах.}
+\addcontentsline{toc}{section}{Публикации автора по теме диссертации} 
+\ifnumequal{\value{bibliosel}}{0}{% Встроенная реализация с загрузкой файла через движок bibtex8
+  \renewcommand{\bibname}{\large \bibtitleauthor}
+  \nocite{*}
+  \insertbiblioauthor           % Подключаем Bib-базы
+  %\insertbiblioexternal   % !!! bibtex не умеет работать с несколькими библиографиями !!!
+}{% Реализация пакетом biblatex через движок biber
+  % Цитирования.
+  %  * Порядок перечисления определяет порядок в библиографии (только внутри подраздела, если `\insertbiblioauthorgrouped`).
+  %  * Если не соблюдать порядок "как для \printbibliography", нумерация в `\insertbiblioauthor` будет кривой.
+  %  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
+  %
+  \nocite{
+        %high impact in right order (do not remove or change)
+        %64 статьи и тезисы + 2 диссертации (тут не учитываются)
+        %VAK изданий 56, не вак 8, тезисов 17, статей 47
+        %NB no of these should appear in othercites.bib (!) - they will then disappear from author list of papers
+hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011,%=======
+         armeev_integrative_2020,kniazeva_analyzing_2020,armeev_analyzing_2019,gribkova_construction_2019,armeev_python_2019,gorkovets_mutual_2018,shaytan_microsecond_2017,shaytan_nucleosome_2016,shaytan_combined_2015,shaytan_polymorphism_2015,kasimova_investigation_2014,kasimova_molecular_2014,chang_pausing_2013,%далее диссертации
+          %не вак
+          armeev_abstract_2019,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_water_2014,chang_structural_2013,armeev_modelirovanie_2013,%патенты
+          patbib1,progbib1}
+  %% authorvak
+  %\nocite{vakbib1}%
+ % \nocite{vakbib2}%
+  %
+  %% authorwos
+ % \nocite{wosbib1}%
+  %
+  %% authorscopus
+ % \nocite{scbib1}%
+  %
+  %% authorpathent
+  %\nocite{patbib1}%
+  %
+  %% authorprogram
+  %\nocite{progbib1}%
+  %
+  %% authorconf
+  %\nocite{confbib1}%
+ % \nocite{confbib2}%
+  %
+  %% authorother
+  %\nocite{bib1}%
+  %\nocite{bib2}%
+    \begin{refcontext}[labelprefix=A]
+        \insertbiblioauthor      % Вывод всех работ автора
+    \end{refcontext}
+  
+  %  \insertbiblioauthorimportant  % Вывод наиболее значимых работ автора (определяется в файле characteristic во второй section)
+
+  % Невидимый библиографический список для подсчёта количества внешних публикаций
+  % Используется, чтобы убрать приставку "А" у работ автора, если в автореферате нет
+  % цитирований внешних источников.
+ % \printbibliography[heading=nobibheading, section=0, env=countexternal, keyword=biblioexternal, resetnumbers=true]%
+  
+}
+
+
+
+% \ifthenelse{\equal{\thebibliosel}{0}}{% Встроенная реализация с загрузкой файла через движок bibtex8
+%   \renewcommand{\refname}{\large \authorbibtitle}
+%   \nocite{*}
+%   \insertbiblioauthor                          % Подключаем Bib-базы
+%   %\insertbiblioother   % !!! bibtex не умеет работать с несколькими библиографиями !!!
+% }{% Реализация пакетом biblatex через движок biber
+%   \insertbiblioauthor                          % Подключаем Bib-базы
+%  % \insertbiblioother
+% }

@@ -1,0 +1,552 @@
+\pdfbookmark{Общая характеристика работы}{characteristic}             % Закладка pdf
+\section*{Общая характеристика работы}
+
+\newcommand{\actuality}{\pdfbookmark[1]{Актуальность}{actuality}\underline{\textbf{\actualityTXT}}}
+\newcommand{\progress}{\pdfbookmark[1]{Разработанность темы}{progress}\underline{\textbf{\progressTXT}}}
+\newcommand{\aim}{\pdfbookmark[1]{Цели}{aim}\underline{{\textbf\aimTXT}}}
+\newcommand{\object}{\pdfbookmark[1]{Объект и предмет исследования}{object}\underline{{\textbf\objectTXT}}}
+\newcommand{\tasks}{\pdfbookmark[1]{Задачи}{tasks}\underline{\textbf{\tasksTXT}}}
+\newcommand{\aimtasks}{\pdfbookmark[1]{Цели и задачи}{aimtasks}\aimtasksTXT}
+\newcommand{\novelty}{\pdfbookmark[1]{Научная новизна}{novelty}\underline{\textbf{\noveltyTXT}}}
+\newcommand{\influence}{\pdfbookmark[1]{Практическая значимость}{influence}\underline{\textbf{\influenceTXT}}}
+\newcommand{\methods}{\pdfbookmark[1]{Методология и методы исследования}{methods}\underline{\textbf{\methodsTXT}}}
+\newcommand{\defpositions}{\pdfbookmark[1]{Положения, выносимые на защиту}{defpositions}\underline{\textbf{\defpositionsTXT}}}
+\newcommand{\reliability}{\pdfbookmark[1]{Достоверность}{reliability}\underline{\textbf{\reliabilityTXT}}}
+\newcommand{\probation}{\pdfbookmark[1]{Апробация}{probation}\underline{\textbf{\probationTXT}}}
+\newcommand{\contribution}{\pdfbookmark[1]{Личный вклад}{contribution}\underline{\textbf{\contributionTXT}}}
+\newcommand{\publications}{\pdfbookmark[1]{Публикации}{publications}\underline{\textbf{\publicationsTXT}}}
+\newcommand{\acknowledge}{\pdfbookmark[1]{Благодарности}{acknowledge}\underline{\textbf{\acknowledgeTXT}}}
+
+\input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
+
+
+
+
+
+
+
+
+%%% Реализация пакетом biblatex через движок biber
+ \begin{refsection}[bl-author, bl-registered]
+  % \begin{refsection}[bl-author]
+
+        % Это refsection=1.
+        % Процитированные здесь работы:
+        %  * подсчитываются, для автоматического составления фразы "Основные результаты ..."
+        %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthor` или `\insertbiblioauthorgrouped`
+        %  * нумеруются там в зависимости от порядка команд `\printbibliography` в этом разделе.
+        %  * при использовании `\insertbiblioauthorgrouped`, порядок команд `\printbibliography` в нём должен быть тем же (см. biblio/biblatex.tex)
+        %
+        % Невидимый библиографический список для подсчёта количества публикаций:
+        \printbibliography[heading=nobibheading, section=1, env=countauthorvak,          keyword=biblioauthorvak]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorwos,          keyword=biblioauthorwos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorscopus,       keyword=biblioauthorscopus]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorconf,         keyword=biblioauthorconf]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorother,        keyword=biblioauthorother]%
+         \printbibliography[heading=nobibheading, section=1, env=countregistered,         keyword=biblioregistered]%
+       \printbibliography[heading=nobibheading, section=1, env=countauthorpatent,       keyword=biblioauthorpatent]%
+         \printbibliography[heading=nobibheading, section=1, env=countauthorprogram,      keyword=biblioauthorprogram]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthor,             keyword=biblioauthor]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorvakscopuswos, filter=vakscopuswos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorscopuswos,    filter=scopuswos]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthorarticle,    keyword=article]%
+        %
+        \nocite{*}%
+    \end{refsection}%
+        {\publications} Основные результаты по теме диссертации изложены в %\cite{shaytan_coupling_2016,shaytan_trajectories_2016,armeev_linking_2019,shaytan_nucleosome_2015,hada_histone_2019,shaytan_free_2010,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_large-scale_2010,yolamanova_peptide_2013,shaytan_structural_2018,shaytan_hydroxyl-radical_2017,gaykalova_structural_2015,chang_analysis_2014,,valieva_large-scale_2016,xiao_molecular_2017,gorkovets_joint_2018,armeev_modeling_2016,bass_effect_2019,lyubitelev_structure_2016,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,gribkova_investigation_2017,armeev_conformational_2015,armeev_molecular_2015,armeev_nucleosome_2016,frank_direct_2015,nishi_physicochemical_2014,shaytan_solvent_2009,sokolova_genome_2014,chertkov_dual_2017,goncearenco_structural_2015,bozdaganyan_comparative_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,biswas_genomic_2016,levtsova_molecular_2009,kasimova_voltage-gated_2014,%=======
+          %armeev_analyzing_2019,armeev_conformational_2015,armeev_integrative_2020,kniazeva_analyzing_2020,armeev_linking_2019,armeev_modeling_2016,armeev_molecular_2015,armeev_nucleosome_2016,armeev_python_2019,bass_effect_2019,biswas_genomic_2016,bozdaganyan_comparative_2014,chang_analysis_2014,chang_pausing_2013,chertkov_dual_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,gorkovets_joint_2018,gorkovets_mutual_2018,gribkova_construction_2019,gribkova_investigation_2017,hada_histone_2019,kasimova_investigation_2014,kasimova_molecular_2014,kasimova_voltage-gated_2014,levtsova_molecular_2009,lyubitelev_structure_2016,nishi_physicochemical_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_combined_2015,shaytan_coupling_2016,shaytan_free_2010,shaytan_hydroxyl-radical_2017,shaytan_large-scale_2010,shaytan_microsecond_2017,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,shaytan_nucleosome_2015,shaytan_nucleosome_2016,shaytan_polymorphism_2015,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_solvent_2009,shaytan_structural_2018,shaytan_trajectories_2016,sokolova_genome_2014,valieva_large-scale_2016,xiao_molecular_2017,yolamanova_peptide_2013,%далее диссертации
+         % shaytan_thesis_kfmn_2010,shaytan_thesis_ulm_2012,%не вак
+         % nikolaev_dynamics_2010,nikolaev_vzaimodeistvie_2010,armeev_abstract_2019,armeev_modelirovanie_2013,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_dinamicheskiy_2006,shaytan_peptide_2006,shaytan_supercomputernoe_2009,shaytan_water_2014},
+         35 статьях в рецензируемых научных изданиях, индексируемых в базах данных Web of Science, Scopus, RSCI. %\cite{shaytan_coupling_2016,shaytan_trajectories_2016,armeev_linking_2019,shaytan_nucleosome_2015,hada_histone_2019,shaytan_free_2010,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_large-scale_2010,yolamanova_peptide_2013,shaytan_structural_2018,shaytan_hydroxyl-radical_2017,gaykalova_structural_2015,chang_analysis_2014,valieva_large-scale_2016,xiao_molecular_2017,gorkovets_joint_2018,armeev_modeling_2016,bass_effect_2019,lyubitelev_structure_2016,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,gribkova_investigation_2017,armeev_conformational_2015,armeev_molecular_2015,armeev_nucleosome_2016,frank_direct_2015,nishi_physicochemical_2014,shaytan_solvent_2009,sokolova_genome_2014,chertkov_dual_2017,goncearenco_structural_2015,bozdaganyan_comparative_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,biswas_genomic_2016,levtsova_molecular_2009,kasimova_voltage-gated_2014,%=======
+         % armeev_analyzing_2019,armeev_conformational_2015,armeev_integrative_2020,kniazeva_analyzing_2020,armeev_linking_2019,armeev_modeling_2016,armeev_molecular_2015,armeev_nucleosome_2016,armeev_python_2019,bass_effect_2019,biswas_genomic_2016,bozdaganyan_comparative_2014,chang_analysis_2014,chang_pausing_2013,chertkov_dual_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,gorkovets_joint_2018,gorkovets_mutual_2018,gribkova_construction_2019,gribkova_investigation_2017,hada_histone_2019,kasimova_investigation_2014,kasimova_molecular_2014,kasimova_voltage-gated_2014,levtsova_molecular_2009,lyubitelev_structure_2016,nishi_physicochemical_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_combined_2015,shaytan_coupling_2016,shaytan_free_2010,shaytan_hydroxyl-radical_2017,shaytan_large-scale_2010,shaytan_microsecond_2017,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,shaytan_nucleosome_2015,shaytan_nucleosome_2016,shaytan_polymorphism_2015,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_solvent_2009,shaytan_structural_2018,shaytan_trajectories_2016,sokolova_genome_2014,valieva_large-scale_2016,xiao_molecular_2017,yolamanova_peptide_2013}\sloppy%
+        \ifnum \value{citeregistered}=1%
+           \ifnum \value{citeauthorpatent}=1%
+               Зарегистрирован \arabic{citeauthorpatent} патент.
+           \fi%
+           \ifnum \value{citeauthorprogram}=1%
+               Зарегистрирована \arabic{citeauthorprogram} программа для ЭВМ.
+           \fi%
+        \fi%
+        \ifnum \value{citeregistered}>1%
+           Зарегистрированы\ %
+           \ifnum \value{citeauthorpatent}>0%
+           \formbytotal{citeauthorpatent}{патент}{}{а}{} \sloppy%
+           \ifnum \value{citeauthorprogram}=0 . \else \ и~\fi%
+           \fi%
+           \ifnum \value{citeauthorprogram}>0%
+           \formbytotal{citeauthorprogram}{программ}{а}{ы}{} для ЭВМ.
+           \fi%
+        \fi%
+        % К публикациям, в которых излагаются основные научные результаты диссертации на соискание учёной
+        % степени, в рецензируемых изданиях приравниваются патенты на изобретения, патенты (свидетельства) на
+        % полезную модель, патенты на промышленный образец, патенты на селекционные достижения, свидетельства
+        % на программу для электронных вычислительных машин, базу данных, топологию интегральных микросхем,
+        % зарегистрированные в установленном порядке.(в ред. Постановления Правительства РФ от 21.04.2016 N 335)
+  
+
+ \begin{refsection}[bl-author, bl-registered]
+ % \begin{refsection}[bl-author]
+        % Это refsection=2.
+        % Процитированные здесь работы:
+        %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthorimportant`.
+        %  * ни на что не влияют в противном случае
+      %  \nocite{vakbib2}%vak
+       %AKShPAT  \nocite{patbib1}%patent
+     %AKShPAT   \nocite{progbib1}%program
+      %  \nocite{bib1}%other
+\nocite{
+        %high impact in right order (do not remove or change)
+        %64 статьи и тезисы + 2 диссертации (тут не учитываются)
+        %VAK изданий 56, не вак 8, тезисов 17, статей 47
+        %NB no of these should appear in othercites.bib (!) - they will then disappear from author list of papers
+hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011,%,shaitan_influence_2013,levtsova_molecular_2009,
+          %armeev_analyzing_2019,armeev_conformational_2015,armeev_integrative_2020,kniazeva_analyzing_2020,armeev_linking_2019,armeev_modeling_2016,armeev_molecular_2015,armeev_nucleosome_2016,armeev_python_2019,bass_effect_2019,biswas_genomic_2016,bozdaganyan_comparative_2014,chang_analysis_2014,chang_pausing_2013,chertkov_dual_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,gorkovets_joint_2018,gorkovets_mutual_2018,gribkova_construction_2019,gribkova_investigation_2017,hada_histone_2019,kasimova_investigation_2014,kasimova_molecular_2014,kasimova_voltage-gated_2014,levtsova_molecular_2009,lyubitelev_structure_2016,nishi_physicochemical_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_combined_2015,shaytan_coupling_2016,shaytan_free_2010,shaytan_hydroxyl-radical_2017,shaytan_large-scale_2010,shaytan_microsecond_2017,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,shaytan_nucleosome_2015,shaytan_nucleosome_2016,shaytan_polymorphism_2015,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_solvent_2009,shaytan_structural_2018,shaytan_trajectories_2016,sokolova_genome_2014,valieva_large-scale_2016,xiao_molecular_2017,yolamanova_peptide_2013,%далее диссертации
+         % shaytan_thesis_kfmn_2010,shaytan_thesis_ulm_2012,%не вак
+         % chang_structural_2013,armeev_abstract_2019,armeev_modelirovanie_2013,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_dinamicheskiy_2006,shaytan_peptide_2006,shaytan_supercomputernoe_2009,shaytan_water_2014,nikolaev_dynamics_2010,nikolaev_vzaimodeistvie_2010,%патенты
+        %  patbib1,progbib1
+        }
+    \end{refsection}%
+        %
+        % Всё, что вне этих двух refsection, это refsection=0,
+        %  * для диссертации - это нормальные ссылки, попадающие в обычную библиографию
+        %  * для автореферата:
+        %     * при usefootcite==0, ссылка корректно сработает только для источника из `external.bib`. Для своих работ --- напечатает "[0]" (и даже Warning не вылезет).
+        %     * при usefootcite==1, ссылка сработает нормально. В авторской библиографии будут только процитированные в refsection=0 работы.
+
+
+
+
+
+
+
+
+
+{\acknowledge} 
+\input{common/acknowledgement}
+
+\underline{\textbf{Объем, структура и логика работы.}} Диссертация состоит из~введения, пяти глав и заключения.
+\textbf{Первая глава} посвящена обсуждению общих методических вопросов молекулярного моделирования, систематизируются области применимости различных методов, излагаются основы методов молекулярной динамики, огрубленного моделирования, концептуальные подходы интегративного моделирования. \textbf{Вторая глава} посвящена применению методов суперкомпьютерной молекулярной динамики для изучения нуклеосом. На примере нуклеосом иллюстрируются возможности и ограничения методов МД, делаются выводы о необходимости применения интегративных подходов к моделированию, учитывающих дополнительные экспериментальные данные. В \textbf{третьей главе} показывается, как, используя данные биохимических экспериментов по расщеплению ДНК гидроксильными радикалами, можно проводить моделирование положения ДНК на нуклеосоме и определять ее точную позицию. В \textbf{четвертой главе} излагаются подходы по интегративному моделированию более сложных систем - комплексов нуклеосом с белками хроматина. Для решения данной задачи дополнительно используются методы огрубленного моделирования ДНК, данные экспериментов электронной микроскопии и мономолекулярного FRET.  \textbf{Пятая глава} посвящена разработке и применению методов интегративного моделирования для решения более сложного класса задач -- определения структуры амилоидоподобных фибрилл. Особенностью таких систем является полиморфизм локальной структурной организации и необходимость учета ее взаимосвязи с крупномасштабной морфологией комплекса.
+
+Полный объём диссертации составляет 488 страниц, включая 106 рисунков и 9 таблиц. Список литературы содержит 677 наименований.
+
+
+
+%\underline{\textbf{Объем и структура работы.}} Диссертация состоит из~введения, четырех глав, заключения и~приложения. Полный объем диссертации \textbf{ХХХ}~страниц текста с~\textbf{ХХ}~рисунками и~5~таблицами. Список литературы содержит \textbf{ХХX}~наименование.
+\nocite{
+        %high impact in right order (do not remove or change)
+        %64 статьи и тезисы + 2 диссертации (тут не учитываются)
+        %VAK изданий 56, не вак 8, тезисов 17, статей 47
+        %NB no of these should appear in othercites.bib (!) - they will then disappear from author list of papers
+  hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011%shaitan_influence_2013,levtsova_molecular_2009,%=======
+        %  armeev_analyzing_2019,armeev_conformational_2015,armeev_integrative_2020,kniazeva_analyzing_2020,armeev_linking_2019,armeev_modeling_2016,armeev_molecular_2015,armeev_nucleosome_2016,armeev_python_2019,bass_effect_2019,biswas_genomic_2016,bozdaganyan_comparative_2014,chang_analysis_2014,chang_pausing_2013,chertkov_dual_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,gorkovets_joint_2018,gorkovets_mutual_2018,gribkova_construction_2019,gribkova_investigation_2017,hada_histone_2019,kasimova_investigation_2014,kasimova_molecular_2014,kasimova_voltage-gated_2014,levtsova_molecular_2009,lyubitelev_structure_2016,nikolaev_dynamics_2010,nikolaev_vzaimodeistvie_2010,nishi_physicochemical_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_combined_2015,shaytan_coupling_2016,shaytan_free_2010,shaytan_hydroxyl-radical_2017,shaytan_large-scale_2010,shaytan_microsecond_2017,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,shaytan_nucleosome_2015,shaytan_nucleosome_2016,shaytan_polymorphism_2015,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_solvent_2009,shaytan_structural_2018,shaytan_trajectories_2016,sokolova_genome_2014,valieva_large-scale_2016,xiao_molecular_2017,yolamanova_peptide_2013,%далее диссертации
+       %   shaytan_thesis_kfmn_2010,shaytan_thesis_ulm_2012,%не вак
+        %  chang_structural_2013,armeev_abstract_2019,armeev_modelirovanie_2013,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_dinamicheskiy_2006,shaytan_peptide_2006,shaytan_supercomputernoe_2009,shaytan_water_2014,nikolaev_dynamics_2010,nikolaev_vzaimodeistvie_2010,%патенты
+         % patbib1,progbib1
+         }
+%\newpage
+\pdfbookmark{Содержание работы}{description}                          % Закладка pdf
+\section*{Содержание работы}
+
+
+
+
+Во \underline{\textbf{введении}} обосновывается актуальность исследований, проводимых в рамках данной диссертационной работы, формулируется цель, ставятся задачи работы, сформулированы научная новизна и практическая значимость представляемой работы, дана общая характеристика работы.
+
+
+\underline{\textbf{Первая глава}} (\textit{Методы молекулярного и интегративного моделирования в структурной биологии}) посвящена анализу литературы по предмету исследования, систематизации понятийного и терминологического аппарата, изложению принципиальных основ методов и подходов молекулярного и интегративного моделирования. Данная глава является обзорной, основана на анализе и обобщении результатов моделирования различных биологических систем. \nocite{hada_histone_2019,bass_effect_2019,armeev_linking_2019,shaytan_structural_2018,gorkovets_joint_2018,xiao_molecular_2017,shaytan_hydroxyl-radical_2017,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,chertkov_dual_2017,armeev_modeling_2016,armeev_nucleosome_2016,biswas_genomic_2016,draizen_histonedb_2016,lyubitelev_structure_2016,shaitan_dynamics_2016,shaytan_coupling_2016,shaytan_trajectories_2016,valieva_large-scale_2016,armeev_conformational_2015,armeev_molecular_2015,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,shaytan_nucleosome_2015,bozdaganyan_comparative_2014,chang_analysis_2014,kasimova_voltage-gated_2014,nishi_physicochemical_2014,sokolova_genome_2014,yolamanova_peptide_2013,shaitan_influence_2013,orekhov_calculation_2012,shaytan_self-assembling_2011,shaytan_self-organizing_2011}
+
+В простейшем случае в биологии под моделью биомолекулы понимают пространственное расположение атомов в ее структуре. Однако многие биомакромолекулы обладают множеством конформаций, описание некоторых систем даже в виде ограниченного набора конформаций затруднительно.
+Методы молекулярного моделирования (molecular modeling, model building) уже достаточно давно применяются для решения оптимизационных задач на основе экспериментальных данных в структурной биологии, например, данных РСА или ЯМР. Такие подходы обычно позволяют получать статические модели биомолекул при наличии экспериментальных данных достаточного качества и количества. Другим подходом является имитационное моделирование (molecular simulations), разновидность компьютерных экспериментов, в которых расчет свойств молекулярной системы происходит, исходя из моделирования физических взаимодействий между атомами. Наиболее известным подходом является метод молекулярной динамики, который открывает возможность описания динамики, конформационной подвижности молекулярных систем. Однако у существующих подходов к моделированию биомакромолекулярных систем есть ряд существенных ограничений. К ним относятся сложности получения качественных экспериментальных данных методами РСА, ЯМР, криоЭМ для больших молекулярных систем, ограничения по временам моделирования в методах МД из-за вычислительной сложности расчетов и ограничения, связанные с качеством силовых полей. Возможным решением данной проблемы является развитие методов интегративного моделирования. Методы интегративного моделирования позволяют объединить разные подходы к моделированию биомолекул с учетом разного рода экспериментальных данных. 
+%Поскольку биомакромолекулярные комплексы обладают зачастую динамической структурой, которая может перестраиваться в результате внешних воздействий и с трудом поддаётся изучению стандартными методами структурной биологии.
+%Таким образом, для их изучения актуальным является развитие подходов, основанных на интеграции подходов классической структурной биологии с подходами компьютерного моделирования, а также интеграции различных экспериментальных структурных данных (в том числе низкого информационного содержания) при построении моделей.  
+Более подробно идея методов интегративного моделирования проиллюстрирована на рисунке \ref{fig:p1:int_mod}.
+%Для больших биомакромолекулярных комплексов может быть доступен ряд экспериментальных данных различной детальности и информационного содержания. К данным высокого информационного содержания можно отнести атомистические структуры отдельных доменов комплекса, полученные стандартными методами структурной биологии. К данным низкого информационного содержания относятся результаты различных биофизических и биохимических экспериментов.
+Такие данные могут предоставлять информацию о форме комплекса (различные виды микроскопии, малоугловое рассеяние), расстояниях между атомными группами (FRET, ЭПР, ЯМР), вероятностях взаимодействия с химическими агентами (футпринтинг, дейтеро-водородный обмен), контактах различных групп и доменов (химическое сшивание, масс-спектрометрия, методы 3D геномики), наличии определенных паттернов структурной организации (ИК-, КД-спектроскопия, дифракционные эксперименты) и т.д. Задача интегративного моделирования состоит в подборе оптимальных структурных или структурно-динамических моделей молекулярных систем, которые с одной стороны удовлетворяют имеющемуся набору экспериментальных данных, а с другой не противоречат известным или расчетным параметрам межмолекулярных и межатомных взаимодействий. 
+В задачах интегративного моделирования может использоваться два принципиальных класса вычислительных процедур. Первый класс процедур предполагает добавление в физическую модель системы (например, функцию потенциальной энергии) дополнительных эмпирических членов, способствующих тому, чтобы состояния, удовлетворяющие экспериментальным значениям измеренных макропараметров, становились более энергетически выгодными.  В главе обсуждается пример такого подхода для моделирования конформации ДНК по данным FRET. Экспериментально определенные расстояния между меченными нуклеотидами используются для добавления к физической модели ДНК эмпирического гармонического потенциала, способствующего уменьшению/увеличению расстояния между этими нуклеотидами до экспериментальных значений. Соответственно проводится минимизации энергии системы. Второй класс процедур предполагает автоматизированный или полу-автоматизированных перебор различных физически допустимых вариантов структурной организации молекулярной системы и нахождение той структурной организации, которая удовлетворяет экспериментальным данным. В процессе оценки физической допустимости конкретной модели и ее соответствия экспериментальным данным могут использоваться методы молекулярной динамики. Главы 3-5 более подробно раскрывают данные подходы на примере конкретных систем и наборов экспериментальных данных.
+
+%В главе последовательно обсуждаются методические основы подходов атомистического молекулярного моделирования методом молекулярной динамики, подходов огрубленного моделирования ДНК в динуклеотидном приближении, а также итегративных подходов по моделированию структуры ДНК-белковых комплексов. Предлагаются подходы по моделированию ДНК-белковых комплексов на основе моделей анизотропной гибкости ДНК с учетом различных экспериментальных ограничений. В частности ограничений на расстояния между парами нуклеотидов, получаемых в ходе экспериментов с введением меток в ДНК, ограничений на форму комплекса, получаемых электронной микроскопией низкого разрешения, данных о расщеплении ДНК химическими или ферментативными агентами. Обсуждаются теоретические основы ряда экспериментальных методов, данные которых могут использоваться в ходе интегративного моделирования структуры биомакромолекул, в том числе методов футпринтинга ДНК, методов спектроскопии и микроскопии, основанных на эффекте Ферстеровского переноса энергии (FRET-спектроскопия/микроскопия), методов геномного анализа.
+
+%В \underline{\textbf{первой главе}} (\textit{Методы молекулярного и интегративного моделирования в структурной биологии}) прежде всего обсуждаются базовые вопросы о том, что называется моделями биомакромолекулярных систем и в каком виде они могут быть представлены. В простейшем случае в биологии под моделью биомолекулы понимают пространственное расположение атомов в ее структуре. Однако, такого формализма во многих случаях не достаточно для описания и понимания биологических систем. Многие биомакромолекулы обладают множеством конформаций, описание некоторых систем даже в виде ограниченного набора конформаций затруднительно (например, неупорядоченные белки или структура хроматина) и, зачастую для их описания используются некоторые макропараметры (плотность, упорядоченность, структурные факторы и т.д.). Понятие моделирования также может пониматься по-разному в зависимости от контекста. 
+%Методы молекулярного моделирования (molecular modeling, model building) уже достаточно давно применяются для решения оптимизационных задач на основе экспериментальных данных в структурной биологии, например, данных РСА или ЯМР. Другим подходом является имитационное моделирование (molecular simulations), разновидность компьютерных экспериментов, в которых расчет свойств молекулярной системы происходит, исходя из моделирования физических взаимодействий между атомами. Методы интегративного моделирования позволяют объединить разные подходы к моделированию биомолекул, а также учитывать гетерогенные экспериментальных данные различного происхождения. Взаимосвязь между различными понятиями суммирована на рисунке \ref{fig:p1:concept_matrix}. 
+%Поскольку биомакромолекулярные комплексы обладают зачастую динамической структурой, которая может перестраиваться в результате внешних воздействий и с трудом поддаётся изучению стандартными методами структурной биологии.
+%Таким образом, для их изучения актуальным является развитие подходов, основанных на интеграции подходов классической структурной биологии с подходами компьютерного моделирования, а также интеграции различных экспериментальных структурных данных (в том числе низкого информационного содержания) при построении моделей.  
+ %Более подробно идея методов интегративного моделирования проиллюстрирована на рисунке \ref{fig:p1:int_mod}.
+ %В главе последовательно обсуждаются методические основы подходов атомистического молекулярного моделирования методом молекулярной динамики, подходов огрубленного моделирования ДНК в динуклеотидном приближении, а также итегративных подходов по моделированию структуры ДНК-белковых комплексов. Предлагаются подходы по моделированию ДНК-белковых комплексов на основе моделей анизотропной гибкости ДНК с учетом различных экспериментальных ограничений. В частности ограничений на расстояния между парами нуклеотидов, получаемых в ходе экспериментов с введением меток в ДНК, ограничений на форму комплекса, получаемых электронной микроскопией низкого разрешения, данных о расщеплении ДНК химическими или ферментативными агентами. Обсуждаются теоретические основы ряда экспериментальных методов, данные которых могут использоваться в ходе интегративного моделирования структуры биомакромолекул, в том числе методов футпринтинга ДНК, методов спектроскопии и микроскопии, основанных на эффекте Ферстеровского переноса энергии (FRET-спектроскопия/микроскопия), методов геномного анализа.
+
+% \begin{figure}[h!] 
+%   \center
+%   \includegraphics [width=\textwidth] {images/p1/concept_matrix.pdf}
+%   \caption{Диаграмма, суммирующая различные подходы к описанию, моделированию и изучению структуры и динамики биомакромолекул.} 
+%   \label{fig:p1:concept_matrix}
+% \end{figure}
+
+
+\begin{figure}[h!] 
+ \center
+ \includegraphics[width=\textwidth] {images/p1/int_mod.pdf}
+ \caption{Идея методов интегративного моделирования.} 
+ \label{fig:p1:int_mod}
+\end{figure}
+
+
+
+
+
+%\textit{Выводы главы 1} \\
+%Исследование структуры многих биомакромолекулярных комплексов испытывает затруднения как при применении стандартных методов структурной биологии, так и при попытках атомистического моделирования на основе расчета атом-атомных взаимодействий. Методы интегративного моделирования, в ходе расчетов учитывающие как физические взаимодействия между атомами, так и экспериментальные данные различной природы, являются перспективным подходом для построения структурно-динамических моделей биомакромолекулярных комплексов. В главе предложены подходы по моделированию ДНК-белковых комплексов на основе моделей анизотропной гибкости ДНК с учетом разнородных экспериментальных данных.
+
+
+В диссертационной работе метод молекулярной динамики является одним из важных компонентов разрабатываемых нами интегративных подходов. Понимание его возможностей и границ применимости необходимо для рационального выбора возможных стратегий моделирования. В связи с этим \underline{\textbf{вторая глава}} (\textit{Применение методов молекулярной динамики для изучения нуклеосом}) иллюстрирует современные возможности и ограничения метода суперкомпьютерной атомистической молекулярной динамики, направленного на получение и анализ структурно-динамических моделей биомакромолекулярных комплексов.
+
+Нуклеосомы являются примером биомакромолекулярного комплекса существенных размеров (около 200 кДа) и играют важную роль в функционировании генома. Они состоят из примерно 200 пар оснований ДНК, организованных гистоновыми белками (Рис. \ref{fig:part2_1_f1}a). Центральные 145–147 пар оснований ДНК образуют коровую частицу нуклеосомы, плотно наматываясь на октамер гистонов в виде $\sim$1,7 витка левой суперспирали \cite{luger_crystal_1997,shaytan_nucleosome_2015,draizen_histonedb_2016}. Нуклеосомы претерпевают множество важных структурных и динамических перестроек во время всех ключевых процессов транскрипции, репликации, репарации ДНК и т.д. \cite{armeev_linking_2019}. Способность нуклеосом претерпевать определенные типы конформационных переходов играет важную роль при взаимодействии с белками, включая ремоделирующие комплексы, факторы транскрипции, шапероны \cite{valieva_large-scale_2016}, РНК-полимеразы \cite{gaykalova_structural_2015} и т.д.
+
+  На рисунке \ref{fig:part2_1_f2}  проиллюстрированы предполагаемые динамические режимы нуклеосом и влияние на них различных факторов: 
+
+\begin{figure} [h!]
+    \centering
+    \includegraphics [width=\textwidth]{images/p2/cosb/part2_1_f1_synopsis.pdf}
+    \caption[Структура и вариабельность нуклеосомы]{(a) Структура нуклеосомы. 
+    (б) Схема типичной структуры гистонового белка и расположение пост-трансляционных модификаций.
+    (в) Место нуклеосом в организации хроматина.}
+    \label{fig:part2_1_f1}
+\end{figure}
+
+\noindent
+последовательности ДНК и гистонов, пост-трансляционных модификаций аминокислот гистонов, взаимодействия с белками. Динамика нуклеосом может происходить спонтанно при данной температуре и носить функционально направленный характер за счет воздействия специальных АТФ-зависимых комплексов. Белковый состав и последовательность ДНК в нуклеосомах влияют на характер динамических процессов в нуклеосомах и таким образом модулируют различные функциональные процессы в геноме. Так показано существование тонких режимов конформационной динамики нуклеосом \cite{armeev_linking_2019}. Например, кручение ДНК внутри нуклеосомы обеспечивает путь для АТФ-зависимого ремоделирования нуклеосом \cite{bowman_remodeling_2019}. Речь идет о существовании особых режимов динамики нуклеосом, в которых важны атомистические детали структурных изменений. Метод молекулярной динамики является мощным инструментом, который может раскрыть природу этих динамических режимов.
+
+
+
+
+
+\begin{figure} [h!]
+    \centering
+    \includegraphics [width=\textwidth]{images/p2/cosb/part2_1_f2_synopsis.pdf}
+    \caption[Моды динамики нуклеосом]{(а) Иллюстрация некоторых мод динамики нуклеосом. (б) Примеры факторов, влияющих на структурную динамику нуклеосом.}
+    \label{fig:part2_1_f2}
+\end{figure}
+
+Для этого нами были разработаны подходы и алгоритмы моделирования нуклеосом методами молекулярной динамки в полноатомном приближении в микросекундном временном диапазоне с использованием суперкомпьютерных технологий. Разработаны алгоритмы подготовки систем для моделирования и анализа динамического поведения нуклеосом в явном растворителе. В частности, разработаны алгоритмы задания нуклеосомной системы координат на основе определения оси суперспирали ДНК и оси псевдосимметрии нуклеосомы. В результате стало возможным определение различных геометрических параметров молекулярной системы таких, как геометрия ДНК, углы вращения ДНК, расположение остова полипептидных цепей.
+  
+
+В \textit{разделе 2.2} приводятся результаты равновесного микросекундного моделирования молекулярной динамики нуклеосом, включающих линкерные сегменты ДНК и полноразмерные гистоны (рисунок \ref{fig:part2_1_f1}), в явном растворителе в атомистическом приближении.
+%Впервые мы смогли идентифицировать и охарактеризовать перестройки в нуклеосомах на микросекундном масштабе времени, изучить связь между конформацией гистоновых хвостов и геометрией ДНК. 
+Было выявлено, что линкерные участки ДНК изменяют свое взаимное расположение из-за электростатического отталкивания, что влияет на углы входа-выхода ДНК из нуклеосом и следовательно на структуру супрануклеосомной организации хроматина. Мы показали, что определенные конформации гистонового хвоста способствуют выпячиванию ДНК вблизи участков ее входа/выхода в/из нуклеосомы, что приводит к образованию дефектов кручения внутри ДНК. 
+
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p2/jmb/part2_2_f1.pdf}
+    \caption{Изменение конформации нуклеосомы в течение 1 мкс в ходе расчетов методом молекулярной динамки. На исходном состоянии (а) цифрами отмечены супер-спиральные положения ДНК, где большая бороздка ДНК обращена в сторону октамера гистонов. В ходе динамики (б-в) наблюдается динамическая подвижность линкерных сегментов ДНК, сопровождающаяся их отталкиванием, а также конденсация хвостов на линкерную и нуклеосомальную ДНК.}
+    \label{fig:p2_2_f1}
+\end{figure}
+
+Показано, что если в начальной структуре гистоновые хвосты экспонированы в растворитель, то в ходе динамики их конденсация на ДНК происходит в течение нескльких десятков наносекунд. Далее начинается диффузия хвостов вдоль поверхности ДНК. При этом хвосты могут принимать конформационно ограниченные позиции из-за вставки  лизинов и аргининов в малые бороздки ДНК. Ряд аминокислот в гистоновых хвостах, являются сайтами важных эпигенетических пост-трансляционных модификаций (см. рисунок \ref{fig:part2_1_f1}б) и сайтами связывания белков хроматина (например, H3K9, H3K27, H4K16). На рисунке \ref{fig:p2_2_f1}в видно, что многие из этих сайтов находятся в тесном контакте с ДНК, что ограничивает их доступность для пост-трансляционной модификации и взаимодействий с белками хроматина. В то же время, такие взаимодействия способствуют возникновению кооперативных эффектов при связывании нескольких белков с соседними сайтами на гистоновых хвостах. Полученные результаты находятся в согласии  с рядом экспериментов по химическому сшиванию гистонов с ДНК, анализу влияния хвостов на взаимодействия белков хроматина с нуклеосомами.  Рисунок \ref{fig:p2_2_f1} суммирует наблюдавшуюся конформационную подвижность нуклеосом.
+
+Результаты  моделирования коровых частиц нуклеосом методом молекулярной динамики приведены в \textit{разделе 2.3}. Разработанные нами оригинальные алгоритмы моделирования позволили получить динамические траектории нуклеосомного кора с полноразмерными гистоновыми хвостами при физиологической температуре и ионной силе на временах более 10 микросекунд. 
+ С помощью специально разработанных алгоритмов анализа траекторий (проекция координат в системе отсчета нуклеосом, расчет относительного скручивания ДНК, анализ стабильных контактов и т. д.) мы выявили новые режимы динамики и пластичности нуклеосом. Мы показали возможность реконфигурации и разворачивания концов ДНК в нуклеосомах, опосредованных гистоновыми хвостами H3 и H2A. Выявленные режимы отворачивания ДНК представлены на рисунке \ref{fig:p2_3:f2}а. В ходе моделирования были выявлены ключевые взаимодействия ДНК-белок с гистонами, которые являются барьерами для откручивания ДНК от октамера гистонов (рисунок \ref{fig:p2_3:f2}б). В ходе моделирования также была показана возможность локального спонтанного изменения степени закрученности ДНК (образование/релаксация так называемых дефектов кручения) и сдвиг ориентационного положения для части коровой ДНК. Данные наблюдения указывают на возможность транслокации ДНК вдоль нуклеосомы путем ``червячного'' передвижения дефектов кручения вдоль ДНК (inchworm meсhanism). При этом ДНК подобно винту прокручивается вдоль поверхности октамера гистонов. В ходе моделирования было показано наличие динамической пластичности ядра гистонов, способствующей подвижности ДНК. В результате сравнительного моделирования коровых частиц нуклеосом с хвостами и без хвостов гистонов было выявлено, что гистоновые хвосты замедляют как время отворота, так и время приворота ДНК, а также при отвороте ДНК удерживают ее вблизи исходной траектории. 
+ 
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p2/10ms/fig2_new.pdf}
+    \caption[Динамика отворота ДНК в нуклеосоме с укороченными гистоновыми хвостами]{Динамика отворота ДНК в нуклеосоме с укороченными гистоновыми хвостами. (а) Наблюдаемые динамические состояния \textbf{1-3}, между которыми система переходит в ходе динамики. (б) Для состояний \textbf{1} и \textbf{2} наблюдаются подсостояния, связанные с реориентацией белкового сегмента в районе H3 $\alpha$N спирали (область H3-``застежки''). (в) Количество пар нуклеотидов отвернутых от октамера гистонов как функция времени моделирования. Критерий отворота ДНК  --  смещение центра пары оснований более, чем на 7 \AA{} от положений оснований в исходной структуре. }
+    \label{fig:p2_3:f2}
+\end{figure}
+
+
+\noindent
+Показано, что область гистона H3, находящаяся между двумя супервитками ДНК (см. среднюю часть Рис. \ref{fig:p2_3:f2}), играет важную роль в стабилизации концов ДНК, а также влияет на стабильность ДНК вблизи диады нуклеосомы.
+
+Результаты, приведенные в данной главе, основаны на следующих ключевых статьях  
+ \cite{shaytan_coupling_2016,hada_histone_2019,bass_effect_2019,armeev_linking_2019,gribkova_investigation_2017,el_kennani_ms_histonedb_2017,shaytan_trajectories_2016,shaytan_coupling_2016,draizen_histonedb_2016,armeev_nucleosome_2016,shaytan_nucleosome_2015,armeev_conformational_2015,armeev_molecular_2015}.
+
+
+
+
+
+
+\textit{Выводы главы 2} \newline
+%В главе 2 на примере моделирования нуклеосом продемонстрированы возможности современных технологий суперкомпьютерного моделирования динамики биомакромолекулярных комплексов в атомистическом приближении на микросекундных временных масштабах.  Показано, что для комплексов ДНК-белок такого размера (около 200 кДа) современные методы равновесной МД позволяют исследовать крупномасштабную динамику, связанную с отворотом/приворотом ДНК, диффузией неупорядоченных белковых хвостов воль ДНК.  На основании моделирования могут быть сформулированы также следующие научные выводы и гипотезы важные с точки зрения понимания функционарования нуклеосом:
+
+ 
+\begin{itemize}
+    \item Электростатическое отталкивание двух сегментов линкерной ДНК является одним из факторов, которые влияют на конформацию ДНК и углы входа-выхода ДНК из ядра нуклеосомы.
+    \item В процессе спонтанного ступенчатого откручивания/прикручивания ДНК в нуклеосоме последовательно теряются стабильные взаимодействия ДНК с гистонами. Конформация ДНК подвержена значительным флуктуациям в наносекундном диапазоне. В переходе нуклеосом из кристаллоподобного состояния в состояние с отвернутой ДНК ключевую роль играют взаимодействия остатков гистона H3 между двумя супервитками ДНК.
+   % \item Показано, что спонтанное откручивание ДНК от нуклеосомы приводит к разрыхлению структуры хроматиновых фибрилл.
+    \item Формирование дефектов кручения ДНК в нуклеосоме и конформационные перестройки внутри глобулярных частей гистонового октамера, происходящие на микросекундных временах, указывают на возможность скольжения нуклеосом вдоль ДНК по винтовому механизму и транслокацию ДНК вдоль октамера.
+  %  \item Гистоновые хвосты в нуклеосоме активно взаимодействуют с коровой и линкерной ДНК, влияют на кооперативность взаимодействия белков хроматина с гистоновыми хвостами.
+  %  \item Конформационные перестройки внутри глобулярных частей гистонового октамера, происходящие на микросекундных временах, влияют на подвижность ДНК и, вероятно, эффективность транслокации ДНК вдоль октамера.
+   % \item Показано наличие аллостерических эффектов между откручиванием концов ДНК в нуклеосоме и стабильности центральной части ДНК, важные с точки зрения передвижения нуклеосом вдоль ДНК.  
+\end{itemize}
+
+
+%Ниже бывшая третья глава.
+%\underline{\textbf{Третья глава}} (\textit{Расчет свободной энергии гидратации и адсорбции аминокислот}) иллюстрирует применение подходов молекулярного моделирования, позволяющих вычислять экспериментально измеримые термодинамические характеристики на основе молекулярно-динамических атомистических моделей.
+%В главе речь идет об изучении гидратации боковых цепей аминокислот вблизи поверхности воды путём построения профилей свободной энергии на основании классических атомистических моделей молекул. Работа также имеет методологическое значение, поскольку в ней впервые предприняты попытки высокоточной численной оценки термодинамических параметров гидратации и адсорбции.
+
+%Для расчёта профиля свободной энергии соединений на границе раздела фаз вода/пар была сконструирована модель границы раздела - прямоугольный слой воды толщиной 4 нм. Для расчёта профиля свободной энергии использовался метод удерживающей силы. На каждом шаге измерялась удерживающая сила, которую необходимо было прикладывать, чтобы удерживать исследуемое соединение на определенном расстоянии от границы раздела фаз. Интегрированием профиля средней силы вычислялся профиль свободной энергии. Измерение энергии адсорбции проводилось двумя предложенными способами: используя подход Гиббса и путём измерения значения профиля энергии в минимуме. В подходе Гиббса сначала рассчитывался относительный профиль концентрации, предполагая концентрацию в газовой фазе равной 1 нм$^{-3}$. Затем рассчитывался избыток энергии Гиббса по формуле \ref{excess}, а энергия адсорбции оценивалась по формуле \ref{ads_fe_eq}, предполагая толщину границы раздела равной 1 нм, поскольку это обычно была величина, на которой варьировался профиль свободной энергии.
+%Оба набора полученных энергий  находятся в отличной корреляции между собой (R=0.9996), хотя заметны некоторые отклонения для веществ с низкой поверхностной активностью, для последних, очевидно, выбор метода имеет значение. Хотя значение энергии в минимуме оказалось хорошей оценкой энергии адсорбции, предположительно метод Гиббса является более универсальным и термодинамически корректным. Примеры полученных профилей свободной энергии приведены на рисунке \ref{4pmf}.
+
+
+%\begin{equation}
+%\Gamma^i=\int_{-\infty}^{z_0}(c^i(z)-c^i_1)dz+\int_{z_0}^{\infty}(c^i(z)-c^i_2)dz
+%\label{excess}
+%\end{equation}
+
+%\begin{equation}
+%G_{ads}=-kT\ln{\frac{\Gamma^S}{c^S\tau}}
+%\label{ads_fe_eq}
+%\end{equation}
+
+%\begin{figure}[h!]
+%\includegraphics[width=\textwidth]{images/p3/4pmf}
+%\caption{\label{4pmf} Профили свободной энергии для нескольких изученных молекул. Пунктирные линии и точки с отмеченными погрешностями - профиль средней силы и его сплайн аппроксимация (погрешности отмечены как $\pm$ одно стандартное отклонение). Сплошная линия - профиль свободной энергии, пунктирно-точечная линия - относительный профиль концентрации, рассчитанный по профилю свободной энергии. Для сравнения пунктирной линией отмечен профиль плотности водного слоя.}
+%\end{figure}
+
+%Материалы данной главы основаны на следующих статьях \cite{shaytan_free_2010,shaytan_solvent_2009}. 
+
+%\textit{Выводы главы 3} \newline
+%По результатам работы, изложенной в главе 3, можно сделать следующие выводы, обладающие научной новизной:
+%\begin{itemize}
+%\item Профили средней силы для боковых цепей аминокислот на границе вода-воздух приблизительно одинаковы по форме: имеют область притяжения перед поверхностью Гиббса со стороны воздуха, и достаточно узкую (0.6-0.7 нм) область выталкивания за поверхностью Гиббса.
+%\item Вывод об одинаковой форме профилей средней силы на границе вода/воздух, по-видимому, можно обобщить на весть класс небольших незаряженных молекул.
+%\item В использованной модели, видимые поверхностные эффекты сольватации для боковых цепей аминокислот исчезают, когда центр масс молекулы погружён на 0.6-0.7 нм в воду по отношению к поверхности Гиббса, что может считаться эффективной глубиной границы раздела для маленьких молекул.
+%\item Профили свободной энергии для всех молекул обладают минимумом в районе границы раздела, который является результатом баланса между силами притяжения, доминирующими со стороны воздуха, и силами отталкивания, доминирующими со стороны воды, и имеющими энтропийную природу.
+%\item Глубина минимума свободной энергии находится в хорошей корреляции с энергией адсорбции, рассчитанной по методу Гиббса.
+%\item С высокой точностью вычислены энергии гидратации и адсорбции для 13 незаряженных веществ-аналогов боковых цепей аминокислот.
+%\item Показано, что энергия адсорбции из газовой фазы для выбранного набора боковых цепей аминокислот находиться в хорошей корреляции с энергией гидратации.
+%\item Энергия адсорбции относительно фазы максимального сродства не коррелирует с энергией гидратации и может использоваться как независимая термодинамическая характеристика молекул вещества.
+%\item Полученные данные для нескольких молекул согласуются с экспериментальными данными и могут применяться для совершенствования силовых полей, однако достоверных систематических данных по оценки энергии адсорбции для всей группы веществ на границе вода-воздух пока в литературе не обнаружено.
+%\end{itemize}
+
+
+Процессы динамики нуклеосом, изученные нами методом МД, ограничены по времени в силу текущих вычислительных возможностей. Крупномасштабные процессы, например, скольжения нуклеосом вдоль ДНК, сборка и разборка нуклеосом, полная диссоциации/реассоциации ДНК пока находятся за пределами моделируемых временных интервалов. Примером задачи не решаемой методами МД является выбор нуклеосомой наиболее энергетически выгодного оптимального положения на большом участке ДНК. Для решения такой задачи могут применяться интегративные подходы, изложенные в \underline{\textbf{третьей главе}} (\textit{Интегративное моделирование с применением данных экспериментов по футпринтингу ДНК}). В главе развиты подходы по моделированию ДНК-белковых комплексов, основанные на использовании экспериментальных данных по расщеплению ДНК (футпринтингу) гидроксильными радикалами. Гидроксильные радикалы обладают высокой реакционной способностью, небольшим размером, не являются заряженными. При взаимодействии с ДНК они атакуют атомы водорода дезоксирибозы, что приводит к расщеплению ДНК с потерей атакованного нуклеотида. При наличии белка на ДНК, белок стерически экранирует ДНК от расщепления. Это свойство можно использовать для анализа структуры ДНК-белковых комплексов. Общая схема данного подхода представлена на рисунке \ref{fig:p5_1_f1}.
+
+
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p5/part5_1_np/p5_1_f1.pdf}
+    \caption[Футпринтинг комплексов ДНК-белок гидроксильными радикалами и структурная интерпретация экспериментальных данных.]{Футпринтинг комплексов ДНК-белок гидроксильными радикалами и структурная интерпретация экспериментальных данных. }
+    \label{fig:p5_1_f1}
+\end{figure}
+
+ Комплексы ДНК-белок создаются с использованием радиоактивно меченной ДНК и подвергаются расщеплению гидроксильными радикалами преимущественно на участках, не защищенных белком. Репертуар расщепленных фрагментов ДНК анализируется с помощью денатурирующего гель-электрофореза. По интенсивности полос в геле можно судить о вероятности расщепления ДНК в том или ином месте последовательности. Атомистические структурные модели могут использоваться для прогнозирования профилей футпринтинга, поскольку частота расщепления зависит от доступности атомов водорода дезоксирибозы. Сравнение предсказанных и экспериментальных результатов может быть использовано для уточнения или создания структурных моделей. Несмотря на кажущуюся простоту данной концепции, ее комплексное решение представляет собой нетривиальную задачу, требует подбора алгоритмов анализа данных, их оптимизацию и программную реализацию. Нами такие алгоритмы были реализованы в виде программного комплекса HYDROID \cite{shaytan_structural_2018} (\url{https://github.com/ncbi/HYDROID}). Ключевой задачей решаемой пакетом HYDROID является количественная оценка частоты расщепления ДНК в каждом положении на основе анализа изображений гель электрофореза, а также теоретическая количественная оценка этого параметра на основе атомистических структурных моделей.
+ 
+Процесс деконволюции изображения дорожек геля в частоты расщепления ДНК представлен на рисунке \ref{fig:p5:p5_2_f5} и предполагает аппроксимацию профиля дорожки в виде суммы кривых Гаусса или Лоренца, описывающих вклад каждой полосы на геле. Математическая процедура данной аппроксимации была реализована в виде многопараметрической оптимизации аналитической функции (являющейся суммой вкладов отдельных пиков) по методу наименьших квадратов на основе алгоритма Левенберга — Марквардта. Данная процедура не всегда приводит к физически обоснованному решению и может быть неустойчива.
+
+
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p5/part5_2_nar/p5_2_f5.pdf}
+    \caption[Количественная оценка экспериментов по гидроксильному футпринтингу и сравнение с теоретическими профилями, полученными на основе атомной структуры известной нуклеосомы (601TA-NUC)]{Количественная оценка экспериментов по гидроксильному футпринтингу и сравнение с теоретическими профилями, полученными на основе атомной структуры известной нуклеосомы (601TA-NUC). (A) Изображение полиакриламидного геля с продуктами реакции для верхней цепи ДНК. (Б) Профиль интенсивности дорожек геля и его деконволюция в индивидуальные интенсивности полос путем подбора функций Гаусса. (В) суперпозиция количественных экспериментальных частот расщепления ДНК и профилей H-SASA, рассчитанных на основе атомистической структуры. (Г) Суперпозиция экспериментальных частот расщепления ДНК для верхней и нижней цепей ДНК.}
+    \label{fig:p5:p5_2_f5}
+\end{figure}
+
+\noindent
+ Поэтому были разработаны дополнительные методы регуляризации решений, накладывающие ограничения на положения и ширину отдельных Гауссианов/Лоренцианов.
+
+Для предсказания вероятности расщепления ДНК по атомистическим структурам были разработаны методы расчета поверхности атомов водорода дезоксирибозы доступной растворителю (H-SASA). Данный параметр чувствителен к небольшим вариациям в геометрии ДНК, параметрам выбираемым для длин атом-атомных связей и размерам атомов. Были проведены наборы расчетов методом молекулярной динамики для выяснения влияния динамических эффектов на профили H-SASA и вычисления наиболее точных профилей H-SASA. В результате были предложены процедуры (в том числе способы добавления атомов водорода к тяжелоатомным структурам) и наборы параметров для оценки профилей H-SASA по кристаллическим структурам.
+
+
+На основании разработанных подходов были изучены данные по расщеплению ДНК в нуклеосомах. В результате моделирования было предсказано, что профили расщепления ДНК слабо зависят от последовательности ДНК и аналогичны в различных нуклеосомах. Было показано, что наличие в нуклеосоме оси псевдосимметрии второго порядка, находит свое отражение в идентичности профилей расщепления ДНК для верхней и нижней цепей ДНК (рис. \ref{fig:p5:p5_2_f5}Г). Таким образом, для каждого нуклеотида верхней цепи ДНК существует нуклеотид нижней цепи с аналогичной вероятностью расщепления. Эти нуклеотиды находятся на одинаковом расстоянии от диады нуклеосомы, но по разные ее стороны. На основании данного наблюдения был сформулирован и апробирован метод определения положения ДНК на нуклеосоме на основе подбора положения диады, которое обеспечивает выполнение вышеуказанного правила. Данный подход позволяет с точностью до одного нуклеотида определить позицию последовательности ДНК на нуклеосомном коре. С помощью данного подхода было определено ранее неизвестное положение ДНК в \textit{in vitro} модели центромерной нуклеосомы третьей хромосомы \textit{S. cerevisiae} (CEN3-NUC) и построена ее структурная модель (рис. \ref{fig:p5:p5_2_f8}). Обсуждается значение данной модели для понимания функционирования центромерных нуклеосом пекарских дрожжей, нуклеосомная ДНК которых содержит функционально важные последовательности аденинов (А-тракты).
+
+Материалы данной главы основаны на следующих статьях \cite{shaytan_hydroxyl-radical_2017,shaytan_structural_2018,armeev_modeling_2016}.
+
+\textit{Выводы главы 3} \newline
+Данные гидроксильного футпринтинга ДНК могут быть эффективно использованы для построения структурных моделей ДНК-белковых комплексов. Для ДНК-белковых комплексов, обладающих осью симметрии второго порядка, сравнение профилей расщепления ДНК для двух цепей позволяет дополнительно повысить точность определения положения ДНК относительно белка. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p5/part5_2_nar/p5_2_f8.pdf}
+    \caption[Применение алгоритма идентификации диады  к нуклеосоме CEN3-NUC с неизвестным положением диады.]{Применение алгоритма идентификации диады к нуклеосоме CEN3-NUC с неизвестным положением диады. (A) коэффициент корреляции Пирсона между экспериментальными профилями расщепления верхней (TS) и нижней (BS) цепей ДНК как функция предполагаемого положения диады; зеленая стрелка - определенное положение, черная стрелка ранее предполагавшееся по \textit{in vivo} данным \cite{cole_centromeric_2011}. (Б) Наложение профилей TS и BS. (В) Полученная модель нуклеосомы (диада установлена в положение 61). Нити ДНК окрашены в соответствии с их последовательностью, выделяя AT-участки: A –– зеленый, T –– синий, G или C –– серый.}
+    \label{fig:p5:p5_2_f8}
+\end{figure}
+Рассмотренный в третьей главе подход с учетом данных футпринтинга ДНК, позволяет определять с высокой точностью сайты взаимодействия ДНК с белками. Такой подход хорошо работает для определения положения ДНК на нуклеосомах, однако для построения моделей более сложных систем таких, как комплексы нуклеосом с белками хроматина, одних данных футпринтинга обычно не достаточно. В \underline{\textbf{четвертой главе}} \textit{(Моделирование комплексов нуклеосом с белками хроматина)} на конкретных примерах излагаются подходы по интегративному моделированию таких комплексов, в том числе с использованием разнородных экспериментальных данных низкого информационного содержания (футпринтинг ДНК, электронная микроскопия, FRET-микроскопия). Главу предваряет введение с описанием современных представлений о структуре хроматина и некоторых подходах к его моделированию.
+
+\textit{Раздел 4.2} посвящен моделированию элонгационных комплексов РНК-полимеразы при транскрипции через нуклеосому на основе данных электронной микроскопии низкого разрешения и данных футпринтинга ДНК. Продвижение РНК-полимеразы вдоль ДНК является сложным биохимическим процессом (Рис. \ref{fig:p6_2_polII_synopsis}А), моделирование которого на данный момент лежит за пределами возможностей молекулярной динамики и квантовой химии, поэтому является хорошей задачей для применения интегративных методов.  Согласно экспериментальным данным при транскрипции РНК-полимеразой II через нуклеосому наблюдается ряд необычных фактов \cite{kulaeva_mechanism_2013}. Нуклеосомы зачастую ``выживают'' при транскрипции, то есть сохраняют свое положение на ДНК, что очень важно для сохранения разметки генома в виде эпигенетических пост-трансляционных модификаций гистонов. Предполагается, что выживание нуклеосом становится возможным благодаря образованию интермедиата ``нулевой'' петли в районе положения +49 после входа полимеразы в нуклеосому. В этом интермедиате ДНК за полимеразой восстанавливает контакты с октамером гистонов, таким образом, поддерживает его стабильность.
+Структуры полимеразы и нуклеосомы известны по отдельности, однако каким образом образуется их комплекс при прохождении полимеразы через различные положения на нуклеосоме оставалось непонятным. С использованием представления геометрии ДНК в виде параметров взаимного расположения пар оснований нами был разработан подход по генерации ансамбля комплексов с различным положением полимеразы, а также возможностью варьировать уровень отворота ДНК от нуклеосомы. Данный подход, в том числе позволил связать ориентационное и трансляционное положение полимеразы и нуклеосомы в комплексе. Далее проводился анализ моделей на предмет оптимальной корреляции пространственного распределения атомов с экспериментальной электронной плотностью и отсутствия стерических перекрываний атомов в комплексе. В результате анализа выбиралась оптимальная модель.
+% В большей степени это относится к тетрамеру гистонов H3/H4 тогда, как димеры гистонов H2A/H2B чаще уходят в раствор и заменяются. РНК полимераза испытывает паузирование как при входе в нуклеосому, так и в районе 40-50 нуклеотидов после входа в нуклеосому, что может играть важную роль в регуляции транскрипции, учитывая, что различные факторы (белки хроматина, шапероны гистонов, пост-трансляционные модификации и т.д.) могут влиять на это паузирование.
+
+Модель комплекса нулевой петли, построенная нами в совместных экспериментально-теоретических работах , представлена на рисунке \ref{fig:p6_2_polII_synopsis}В. Детальный анализ данных моделей позволил выдвинуть гипотезу о том, что ряд отрицательно заряженных областей РНК-полимеразы II способствует стабильности данного комплекса (рис. \ref{fig:p6_2_polII_synopsis}Г). Данные предположения подтверждаются сравнением моделей и экспериментальных данных для ряда бактериальных РНК-полимераз \cite{chang_analysis_2014}. Поскольку комплекс нулевой петли требует времени для образования, то пауза, возникающая при транскрипции, может приводить к откату (backtracking) активного центра 
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p6/p6_2/p6_2_polII_synopsis.pdf}
+    \caption{Моделирование комплексов РНК-полимеразы (РНКП) и нуклеосомы. А. Принципиальная схема движения РНКП по ДНК к нуклеосоме. Б. Структура комплекса РНКП \textit{E. coli} с активным центром в положении +42 после входа в нуклеосому, построенная путем подбора оптимальной структуры комплекса, вписывающейся в электронную плотность и удовлетворяющая данным по доступности ДНК к расщеплению ДНКазе I \cite{gaykalova_structural_2015}. В. Модель комплекса в положении +49 (нулевая петля) с РНКП II \textit{S. cerevisiae} \cite{chang_analysis_2014}. Г. Поверхность полимеразы, взаимодействующая с нуклеосомой раскрашенная по заряду. Рамками обозначены отрицательно заряженные области предположительно стабилизирующие комплекс \cite{chang_analysis_2014}. }
+    \label{fig:p6_2_polII_synopsis}
+\end{figure}
+
+\noindent
+полимеразы назад \cite{gaykalova_structural_2015}. Модель данного комплекса была также построена нами и представлена на рисунке \ref{fig:p6_2_polII_synopsis}Б.
+
+\textit{Раздел 4.3} посвящен построению моделей разворачивания нуклеосом при их взаимодействии с комплексом гистоновых шаперонов FACT по данным экспериментов мономолекулярного FRET.
+В данном случае по данным FRET были оценены расстояния между положениями ДНК, в которых  были введены флюоресцентные метки. К огрубленной физической модели ДНК (представленной в динуклеотидном приближении) добавлялся эмпирический гармонический потенциал, призванный свести расстояние между метками к наблюдаемому экспериментально. В результате оптимизации энергии были построены модели, в которых показаны возможные моды разворачивания ДНК и гистонов, удовлетворяющие экспериментальным данным \cite{valieva_large-scale_2016}.
+
+В этой главе также изложены результаты анализа связывания центромерных нуклеосом пекарских дрожжей с белком внутренней кинетохоры Mif2 по данным гидроксильного футпринтинга. В главе 3 рассмотрена модель центромерной нуклеосомы и точно определено положении ДНК последовательности в ней. При анализе комплекса на профили доступности ДНК к расщеплению оказывало влияние взаимодействие ДНК не только с гистонами, но и с белком Mif2. Путем сравнения экспериментальных данных, обработанных с помощью разработанной программы HYDROID, было показано, что димер белка Mif2 взаимодействует с одной из сторон нуклеосомы в районе 5-35 пар нуклеотидов от центра нуклеосомы.   \cite{xiao_molecular_2017}. В главе также приводятся результаты по анализу комплексов нуклеосом с гистоном H1. 
+Обсуждается результаты моделирования конформации линкерной ДНК при связывании гистона H1 по данным FRET, а также энергетические предпочтения изгиба линкерной ДНК при различных модах связывания гистона H1 \cite{gorkovets_joint_2018,bass_effect_2019,armeev_modeling_2016}. 
+
+Материалы главы основаны на следующих статьях \cite{xiao_molecular_2017,gaykalova_structural_2015,valieva_large-scale_2016,gorkovets_joint_2018,bass_effect_2019,armeev_modeling_2016}.
+
+
+
+\textit{Выводы главы 4} \newline
+%В данной главе были изложены результаты по применению интегративных подходов для моделирования комплексов нуклеосом с белками хроматина. Изложены результаты работ, в которых были получены различные комплексы нуклеосом с РНК-полимеразой, конформации нуклеосом при связывании гистона H1 и комплекса FACT, модели взаимодействия нуклеосом с белком CENP-C. 
+Автором продемонстрировано, что методы интегративного моделирования способны решать важный класс задач при изучении супрануклеосомной структуры хроматина, исследования которой затруднительны классическими методами структурной биологии, а именно создавать модели комплексов нуклеосом с белками хроматина на основе использования экспериментальных данных электронной микроскопии низкого разрешения, данных FRET-микроскопии, данных футпринтинга ДНК. Получены структурные и динамические модели различных комплексов, возникающих при взаимодействии нуклеосом с РНК-полимеразами, гистоном H1, комплексом FACT.
+
+
+
+
+
+В \underline{\textbf{пятой главе}} (\textit{Интегративное моделирование амилоидоподобных фибрилл}) рассмотрены подходы к определению структуры фибриллярных комплексов, образующихся при самосборке олигопептидов. Задача заключается в определении формы комплекса и его внутренней организации.
+В этом подходе экспериментальные данные используются уже на этапе конструирования возможных межмолекулярных укладок пептидов и на этапе оценки крупномасштабной морфологии фибрилл.
+
+В начале главы дается подробный обзор литературы о свойствах и характеристиках амилоидных и амилоидоподобных фибрилл (в том числе конъюгированных с синтетическими молекулами), типах известной или предполагаемой их структурной организации. 
+%Отдельно обсуждаются работы по использованию агрегационных свойств пептидов для создания самособирающихся нанотехнологических конструкций. В частности, дается обзор работ по конъюгатам синтетических полимеров с пептидами, приводятся экспериментальные данные по самосборке фибрилл на основе диблок олигомеров кватротиофен-пептид. Тифоены являются проводящими полимерами и поэтому такие системы рассматриваются с точки зрения создания самособирающихся ``нанопроводов''.
+
+\textit{Раздел 5.2} посвящен работам по интегративному моделированию структуры амилоидоподобных фибрилл из диблок олигомеров тетратиофен-(Thr-Val)$_3$-пептид. Была разработана методология, позволяющая на основе ограниченного набора данных (ИК-, КД-спектроскопия, рентгеновская дифракция, данные атомно-силовой микроскопии, просвечивающей электронной микроскопии и т.д.) реконструировать наиболее вероятные атомистические модели и укладки молекул в фибриллах. Схема разработанной стратегии изображена на рисунке \ref{fig:p4_p5_f54}. Известно, что в основе амилоидных фибрилл  лежит укладка пептидов в $\beta$-листы.
+%Однако конкретный тип такой укладки зачастую не известен. Он может включать как параллельные, так и антипараллельные $\beta$-листы, которые в свою очередь могут взаимодействовать различными сторонами. Изначальный отбор данных укладок может быть произведен с учетом данных ИК- и КД-спектроскопии, рентгеновской дифракции от фибрилл.
+Данные спектроскопии могут помочь отличить наличие параллельных от анти-параллельных $\beta$-листов. Данные дифракции оценить периодичность укладки $\beta$-нитей в листе и $\beta$-листов относительно друг друга. Варианты укладки можно оценить на основе расчета энтальпии образования при моделировании укладок методом МД в растворителе и использовать для построения начальных моделей фибрилл. С использованием алгоритмов диссипативной динамики частиц можно определить крупномасштабную морфологию фибрилл (включая период кручения и персистентную длину) и сопоставить с данными микроскопии. На основе данного подхода было проведено комплексное исследование различных вариантов молекулярной организации фибрилл на основе олигомеров тиофен-пептид, определены наиболее вероятные модели, наблюдаемых в эксперименте фибрилл, в том числе на графите. Практической мотивацией создания такого рода фибрилл, являются проводящие свойства тиофена, что может приводить к формированию проводящих фибрилл ``нанопроводов''.  
+
+\textit{Раздел 5.3} посвящен применению разработанного подхода для установления молекулярной структуры пептидных амилоидоподобных фибрилл EF-C, образующихся из 12-аминокислотного пептида QCKIKQIINMWQ. Данные пептиды были выделены, как часть сиквенса гликопротеина gp120 ВИЧ-1. Экспериментально было установлено, что наличие данного пептида приводит к увеличению инфицирования клеток вирусом до 34 раз.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p4/punkt5/part4_p5_f54.pdf}
+    \caption[Схематическое изображение комбинированной экспериментальной/вычислительной интегративной методологии для изучения амилоидоподобных фибрилл]{Схематическое изображение комбинированной экспериментальной/вычислительной интегративной методологии для изучения амилоидоподобных фибрилл.}
+    \label{fig:p4_p5_f54}
+\end{figure}
+
+
+ На основе данных атомно-силовой микроскопии, кругового дихроизма, инфракрасной спектроскопии, порошковой дифракция рентгеновских лучей с применением разработанного нами интегративного подхода была построена молекулярная модель фибрилл EF-C (рис. \ref{fig:p4_nn2013_f2}г – e) \cite{yolamanova_peptide_2013}. Установлено, что боковые цепи лизина образуют гидрофильную поверхность с высокой плотностью катионных зарядов при физиологическом pH (рис. \ref{fig:p4_nn2013_f2}е)., таким образом усиливая проникновение генетического материала вируса в клетку.
+    
+ Материалы данной главы основаны на следующих ключевых статьях \cite{shaytan_self-assembling_2011,shaytan_self-organizing_2011,yolamanova_peptide_2013}. 
+
+\textit{Выводы главы 5} \newline
+Разработаны подходы интегративного моделирования амилоидоподобных фибрилл, позволяющие реконструировать укладку пептидов и морофологию фибрилл на основе сочетания экспериментальных данных ИК- и КД-спектроскопии, рентгеновской дифракции, электронной и атомно-силовой микроскопии.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=\textwidth]{images/p4/natnanotech2013/nn2013/nn2013_f2.pdf}
+    \caption[Структурная характеристика и молекулярное моделирование фибрилл EF-C]{Структурная характеристика и молекулярное моделирование фибрилл EF-C. \textbf{А} - АСМ-изображение фибрилл EF-C. \textbf{Б}, профиль по указанной линии в \textbf{А}. \textbf{В}, ИКФС-спектр, \textbf{Г} - Молекулярная модель пептида EF-C. \textbf{Д}, вид  сверху и сбоку элементарной единицы фибриллы, состоящей из четырех $\beta$-нитей, собранных в стопку из двух антипараллельных $\beta$-листов. \textbf{е}, Уточненная молекулярная модель фибриллы с шагом спирали 28 нм. Атомы C, серый; N, синий; О, красный; S, желтый.}
+    \label{fig:p4_nn2013_f2}
+\end{figure}
+
+
+
+
+%По результатам работы данной главы можно сделать следующие выводы:
+ %\begin{itemize}
+%\item Разработаны подходы интегративного моделирования амилоидоподобных фибрилл, основанные на использовании экспериментальных данных (рентгеновская дифракция на фибриллах, ИК- и КД-спектроскопия, окрашивание красителями) для конструирования возможных укладок пептидов в амилоидные фибриллы, использовании методов молекулярной динамики (в том числе с использованием элементов диссипативной динамики частиц) для установления крупномасштабной морфологии фибрилл с заданной укладкой и последующем сравнении модельных морфологий с экспериментальными данными (электронная микроскопия, атомно-силовая микроскопия).
+%\item В рамках комплексного теоретико-экспериментального интегративного подхода охарактеризовано взаимное расположение бета нитей и крупномасштабная морфологии фибрилл, состоящих из олигомеров тиофена и пептидов (самособирающиеся биоорганические нанопровода). Получены атомистические модели фибрилл согласующиеся с экспериментальными данным. Модели фибрилл основаны на антипараллельной сборке $\beta$-листов из пептидов с последующим взаимодействием двух лент гидрофильными сторонами. Предложены стратегии улучшения проводимости самособирающихся фибрилл, основанные на использовании параллельной укладки $\beta$-листов, которая должна приводить к более плотному контакту проводящих тиофеновых групп.
+%\item С помощью разработанного подхода построена структурная модель положительно заряженных фибрилл EF-C, которые могут использоваться для ускорения взаимодействия вирусных векторов с эукариотическими клетками в ходе трансдукции или генной терапии. Построенная модель согласуется с экспериментальными данными и основана на антипараллельной укладке пептидов в $\beta$-листы. Данная укладка дополнительно стабилизируется электростатическими взаимодействиями между заряженными концами пептидов.
+%\end{itemize}
+
+
+
+
+В \underline{\textbf{заключении}} приведено обсуждение результатов работы, рекомендации по их использованию и выводы, которые сформулированы ниже.
+
+%\pdfbookmark{Заключение}{conclusions} 
+
+\input{common/concl}
+
+\medskip
+\pagebreak
+\pdfbookmark{Основные публикации автора по теме диссертации}{authorbibliography} 
+\textbf{Основные публикации Шайтана Алексея Константиновича по теме диссертации в рецензируемых научных изданиях, индексируемых в базах данных Web of Science, Scopus, RSCI, рекомендованных для защиты в диссертационном совете МГУ по специальности 03.01.09 - <<Математическая биология, биоинформатика>>}\footnote{В скобках приведен объем публикации в печатных листах и вклад автора в печатных листах.}
+\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=false}}{} % не рекомендуется применять пакет микротипографики к автоматически генерируемому списку литературы
+\urlstyle{rm}                               % ссылки URL обычным шрифтом
+\ifnumequal{\value{bibliosel}}{0}{% Встроенная реализация с загрузкой файла через движок bibtex8
+  \renewcommand{\bibname}{\large \bibtitleauthor}
+  \nocite{*}
+  \insertbiblioauthor           % Подключаем Bib-базы
+  %\insertbiblioexternal   % !!! bibtex не умеет работать с несколькими библиографиями !!!
+}{% Реализация пакетом biblatex через движок biber
+  % Цитирования.
+  %  * Порядок перечисления определяет порядок в библиографии (только внутри подраздела, если `\insertbiblioauthorgrouped`).
+  %  * Если не соблюдать порядок "как для \printbibliography", нумерация в `\insertbiblioauthor` будет кривой.
+  %  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
+  %
+  %перенесено наверх
+  %\nocite{
+        %high impact in right order (do not remove or change)
+        %64 статьи и тезисы + 2 диссертации (тут не учитываются)
+        %VAK изданий 56, не вак 8, тезисов 17, статей 47
+        %NB no of these should appear in othercites.bib (!) - they will then disappear from author list of papers
+   %    armeev_linking_2019,hada_histone_2019,shaytan_structural_2018,shaytan_hydroxyl-radical_2017,xiao_molecular_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,shaytan_coupling_2016,valieva_large-scale_2016,gaykalova_structural_2015,frank_direct_2015,nishi_physicochemical_2014,yolamanova_peptide_2013,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_large-scale_2010,shaytan_free_2010,shaytan_solvent_2009,kasimova_voltage-gated_2014,chang_analysis_2014,sokolova_genome_2014,%=======
+    %      armeev_analyzing_2019,armeev_conformational_2015,armeev_integrative_2020,kniazeva_analyzing_2020,armeev_linking_2019,armeev_modeling_2016,armeev_molecular_2015,armeev_nucleosome_2016,armeev_python_2019,bass_effect_2019,biswas_genomic_2016,bozdaganyan_comparative_2014,chang_analysis_2014,chang_pausing_2013,chang_structural_2013,chertkov_dual_2017,draizen_histonedb_2016,el_kennani_ms_histonedb_2017,frank_direct_2015,gaykalova_structural_2015,goncearenco_structural_2015,gorkovets_joint_2018,gorkovets_mutual_2018,gribkova_construction_2019,gribkova_investigation_2017,hada_histone_2019,kasimova_investigation_2014,kasimova_molecular_2014,kasimova_voltage-gated_2014,levtsova_molecular_2009,lyubitelev_structure_2016,nikolaev_dynamics_2010,nikolaev_vzaimodeistvie_2010,nishi_physicochemical_2014,orekhov_calculation_2012,shaitan_dynamics_2016,shaitan_influence_2013,shaytan_combined_2015,shaytan_coupling_2016,shaytan_free_2010,shaytan_hydroxyl-radical_2017,shaytan_large-scale_2010,shaytan_microsecond_2017,shaytan_molekularnaya_2005,shaytan_neravnovesnaya_2006,shaytan_nucleosome_2015,shaytan_nucleosome_2016,shaytan_polymorphism_2015,shaytan_self-assembling_2011,shaytan_self-organizing_2011,shaytan_solvent_2009,shaytan_structural_2018,shaytan_trajectories_2016,sokolova_genome_2014,valieva_large-scale_2016,xiao_molecular_2017,yolamanova_peptide_2013,%далее диссертации
+     %     shaytan_thesis_kfmn_2010,shaytan_thesis_ulm_2012,%не вак
+      %    armeev_abstract_2019,armeev_modelirovanie_2013,bass_abstract_2019,greshnova_sinteticheskaya_2019,shaytan_dinamicheskiy_2006,shaytan_peptide_2006,shaytan_supercomputernoe_2009,shaytan_water_2014,%патенты
+       %   patbib1,progbib1}
+  %% authorvak
+  %\nocite{vakbib1}%
+ % \nocite{vakbib2}%
+  %
+  %% authorwos
+ % \nocite{wosbib1}%
+  %
+  %% authorscopus
+ % \nocite{scbib1}%
+  %
+  %% authorpathent
+  %\nocite{patbib1}%
+  %
+  %% authorprogram
+  %\nocite{progbib1}%
+  %
+  %% authorconf
+  %\nocite{confbib1}%
+ % \nocite{confbib2}%
+  %
+  %% authorother
+  %\nocite{bib1}%
+  %\nocite{bib2}%
+
+  \ifnumgreater{\value{usefootcite}}{0}{
+    \begin{refcontext}[labelprefix={}]
+      \ifnum \value{bibgrouped}>0
+        \insertbiblioauthorgrouped    % Вывод всех работ автора, сгруппированных по источникам
+      \else
+        \insertbiblioauthor      % Вывод всех работ автора
+      \fi
+    \end{refcontext}
+  }{
+  \ifnum \totvalue{citeexternal}>0
+    \begin{refcontext}[labelprefix=*]
+      \ifnum \value{bibgrouped}>0
+        \insertbiblioauthorgrouped    % Вывод всех работ автора, сгруппированных по источникам
+      \else
+        \insertbiblioauthor      % Вывод всех работ автора
+      \fi
+    \end{refcontext}
+  \else
+    \ifnum \value{bibgrouped}>0
+      \insertbiblioauthorgrouped    % Вывод всех работ автора, сгруппированных по источникам
+    \else
+      \insertbiblioauthor      % Вывод всех работ автора
+    \fi
+  \fi
+  %  \insertbiblioauthorimportant  % Вывод наиболее значимых работ автора (определяется в файле characteristic во второй section)
+
+\textbf{Зарегистрированные патенты и программы}
+
+\begin{enumerate}
+  \item Заявка 2580006 Рос. федерация, МПК G 06 F 19/100. Способ скрининга потенциальных противоопухолевых препаратов ингибиторов FACT [Текст] / В. М. Студитский, О. И. Студитская, А. К. Шайтан (Российская Федерация). — No 2013132806/10 ; заявл. 16.07.2013 ; опубл. 27.01.2015, Бюл. No 3 ; приоритет 16.07.2013 (Рос. Федерация). — 10 с.
+\item Свидетельство о гос. регистрации программы для ЭВМ. Программный комплекс реконструкции пространственной структуры белков и комплексов на основе карт электронной плотности низкого разрешения [Текст] / Д. Л. Шуров, А. К. Шайтан, Г. А. Армеев, Д. А. Турченков, В. Н. Блинов, М. П. Кирпичников, К. В. Шайтан. — No 2013614397 ; заявл. 13.05.2013 ; опубл. 17.07.2013, 2013614397 (Рос. Федерация).
+\end{enumerate}
+
+  \pdfbookmark{Список литературы}{bibliography}
+  \begin{refcontext}[labelprefix={}]
+      \insertbiblioexternal            % Вывод списка литературы, на которую ссылались в тексте автореферата
+  \end{refcontext}
+  % Невидимый библиографический список для подсчёта количества внешних публикаций
+  % Используется, чтобы убрать приставку "А" у работ автора, если в автореферате нет
+  % цитирований внешних источников.
+  \printbibliography[heading=nobibheading, section=0, env=countexternal, keyword=biblioexternal, resetnumbers=true]%
+  }
+}
+\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=true}}{}
+\urlstyle{tt}                               % возвращаем установки шрифта ссылок URL

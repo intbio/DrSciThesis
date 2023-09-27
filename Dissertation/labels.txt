@@ -1,0 +1,206 @@
+ 208 
+   1                 \caption{\label{tab:tab_pref}Стандартные префиксы ссылок}
+   1       минимума равно нулю.\label{tab:test-functions}}\\% label всегда желательно идти после caption
+   1      \label{eq:p1_1:e1}
+   1     \caption{Программа ,,Hello, world`` на \protect\cpp}\label{lst:hwbeauty}
+   1     \caption{Программа ,,Hello, world`` без подсветки}\label{lst:hwplain}
+   1     \caption{Наименование таблицы средней длины}\label{tab:test5}% label всегда желательно идти после caption
+   1     \label{DNA_ener}
+   1     \label{eq:p4:persist_len}
+   1     \label{fig:p1_1:f10}
+   1     \label{fig:p1_1:f11}
+   1     \label{fig:p1_1:f12}
+   1     \label{fig:p1_4:f6}
+   1     \label{fig:p1_4:f7}
+   1     \label{fig:p1_4:f8}
+   1     \label{fig:p1_5_fret:f3}
+   1     \label{fig:p1_5_fret:f4}
+   1     \label{fig:p1_5_genome:f5}
+   1     \label{fig:p1_5_genome:f6}
+   1     \label{fig:p2_2_f1}
+   1     \label{fig:p2_2_f2}
+   1     \label{fig:p2_2_f3}
+   1     \label{fig:p2_2_f4}
+   1     \label{fig:p2_2_f5}
+   1     \label{fig:p2_2_f6}
+   1     \label{fig:p2_2_f7}
+   1     \label{fig:p2_2_f8}
+   1     \label{fig:p2_2_f9}
+   1     \label{fig:p2_3:f1}
+   1     \label{fig:p2_3:f2}
+   1     \label{fig:p2_3:f3}
+   1     \label{fig:p2_3:f4}
+   1     \label{fig:p2_3:f5}
+   1     \label{fig:p2_3:f6}
+   1     \label{fig:p2_3:f7}
+   1     \label{fig:p2_3:f9}
+   1     \label{fig:p4_modeling_sf5}
+   1     \label{fig:p4_modeling_sf6}
+   1     \label{fig:p4_nn2013_f1}
+   1     \label{fig:p4_nn2013_f2}
+   1     \label{fig:p4_p1_f1}
+   1     \label{fig:p4_p1_f2}
+   1     \label{fig:p4_p1_f3}
+   1     \label{fig:p4_p1_f4}
+   1     \label{fig:p4_p1_f5}
+   1     \label{fig:p4_p1_f6}
+   1     \label{fig:p4_p1_f7}
+   1     \label{fig:p4_p1_f8}
+   1     \label{fig:p4_p1_f9}
+   1     \label{fig:p4_p5_f31}
+   1     \label{fig:p4_p5_f32}
+   1     \label{fig:p4_p5_f33}
+   1     \label{fig:p4_p5_f34}
+   1     \label{fig:p4_p5_f35}
+   1     \label{fig:p4_p5_f36}
+   1     \label{fig:p4_p5_f37}
+   1     \label{fig:p4_p5_f38}
+   1     \label{fig:p4_p5_f39}
+   1     \label{fig:p4_p5_f40}
+   1     \label{fig:p4_p5_f41}
+   1     \label{fig:p4_p5_f42}
+   1     \label{fig:p4_p5_f43}
+   1     \label{fig:p4_p5_f44}
+   1     \label{fig:p4_p5_f45}
+   1     \label{fig:p4_p5_f46}
+   1     \label{fig:p4_p5_f47}
+   1     \label{fig:p4_p5_f48}
+   1     \label{fig:p4_p5_f49}
+   1     \label{fig:p4_p5_f50}
+   1     \label{fig:p4_p5_f51}
+   1     \label{fig:p4_p5_f52}
+   1     \label{fig:p4_p5_f53}
+   1     \label{fig:p4_p5_f54}
+   1     \label{fig:p4_p5_f55}
+   1     \label{fig:p5:p5_2_f2}
+   1     \label{fig:p5:p5_2_f3}
+   1     \label{fig:p5:p5_2_f4}
+   1     \label{fig:p5:p5_2_f5}
+   1     \label{fig:p5:p5_2_f6}
+   1     \label{fig:p5:p5_2_f7}
+   1     \label{fig:p5:p5_2_f8}
+   1     \label{fig:p5_1_f1}
+   1     \label{fig:p5_1_f2}
+   1     \label{fig:p5_1_f3}
+   1     \label{fig:p5_1_f4}
+   1     \label{fig:p5_1_f5}
+   1     \label{fig:p5_1_f6}
+   1     \label{fig:p6_1_f1}
+   1     \label{fig:p6_1_f2.1}
+   1     \label{fig:p6_1_f2.2}
+   1     \label{fig:p6_1_f3}
+   1     \label{fig:p6_1_f4}
+   1     \label{fig:p6_2_n2014_f1}
+   1     \label{fig:p6_2_n2014_f2}
+   1     \label{fig:p6_2_n2014_f7}
+   1     \label{fig:p6_2_pnas_f6}
+   1     \label{fig:p6_3_f22}
+   1     \label{fig:p6_3_f23}
+   1     \label{fig:p6_3_f24}
+   1     \label{fig:p6_5_f1}
+   1     \label{fig:p6_5_f2}
+   1     \label{fig:p6_5_f5}
+   1     \label{fig:part2_1_f1}
+   1     \label{fig:part2_1_f2}
+   1     \label{fig:part2_1_f3}
+   1     \label{fret_E}
+   1     \label{tab:p4_t1}
+   1     \label{tab:p4_t2}
+   1     \label{tab:p4_t3}
+   1     \label{tab:p5_t1}
+   1     \label{tab:p5_t2}
+   1     \label{tab:p6_n2014_t1}
+   1     \lstinputlisting[lastline=78,language={R},caption={Листинг из внешнего файла},label={lst:external1}]{listings/run_analysis.R}
+   1    \label{eq:p1:fret}
+   1    \label{eq:p1:lang_proc}
+   1    \label{eq:p1:langevin}
+   1    \label{f:2_surf}
+   1   \begin{refcontext}[labelprefix={}]
+   1   \caption{Длинная таблица с примером чересстрочного форматирования\label{tab:other-row}}\vspace*{1ex}\\% label всегда желательно идти после caption
+   1   \label{fig:2_pcff_terms}
+   1   \label{fig:p1:DNA_param}
+   1   \label{fig:p1:concept_matrix}
+   1   \label{fig:p1:int_mod_dinuc}
+   1   \label{fig:p1:mod_history}
+   1   \label{fig:p1:olson_DNA_param}
+   1  \label{fig:p1:int_mod}
+   1 %      \label{fig:p1_5_fret:f6}
+   1 %     \label{fig:p1_5_fret:f5}
+   1 %     \label{fig:p4_nn2013_f3}
+   1 %     \label{fig:p4_nn2013_f4}
+   1 %     \label{fig:p4_nn2013_f5}
+   1 %     \label{fig:p5_1_f7}
+   1 %     \label{fig:p5_1_f8}
+   1 %     \label{fig:p6_2_n2014_f6}
+   1 %     \label{tab:p5_ttrouble}
+   1 %    \label{fig:p4_p1_f1}
+   1 %    \usepackage[final, babel, shrink=45]{microtype}[2016/05/14] % улучшает представление букв и слов в строках, может помочь при наличии отдельно висящих слов
+   1 % \caption{Описание входных файлов модели}\label{Namelists}
+   1 &&U(r^N)=U_{bond}+U_{angle}+U_{dih}+U_{nb} \label{opls_ff_eqn}\\
+   1 &&U_{\theta\theta^\prime}=\sum_{\theta\theta^\prime}F_{\theta\theta ^\prime} (\theta-\theta_0)(\theta ^\prime-\theta _0^\prime)  \\  \label{pcff_eqn}
+   1 \begin{lstlisting}[language={Renhanced},caption={Пример листинга c подписью собственными средствами},label={lst:internal3}]
+   1 \caption{\label{4pmf} Профили свободной энергии для нескольких изученных молекул. Пунктирные линии и точки с отмеченными погрешностями -- профиль средней силы и его сплайн аппроксимация (погрешности отмечены как $\pm$ одно стандартное отклонение). Сплошная линия - профиль свободной энергии, пунктирно-точечная линия - относительный профиль концентрации, рассчитанный по профилю свободной энергии. Для сравнения пунктирной линией отмечен профиль плотности водного слоя.}
+   1 \caption{\label{butane_snapshots} Мгновенные изображения молекулы бутана во время расчётов на различных расстояниях от границы раздела. Положения соответствующие: (а) максимальной силе притяжения, (b) адсорбционному минимуму, (с) максимальной выталкивающей силе.}
+   1 \caption{\label{cor_ads_hydr_affin} График корреляций между энергиями гидратации и адсорбции.}
+   1 \caption{\label{diagr} Двумерная классификационная диаграмма для исследованных веществ в координатах энергия гидратации - энергия адсорбции относительно фазы максимального сродства.}
+   1 \caption{\label{mf_d_field}Профиль среднего электрического поля (пунктирно-точечная линия), профиль средней силы для одной молекулы воды (треугольники с погрешностями) как функция Z. Профиль плотности дан для сравнения (пунктирная линия).}
+   1 \caption{\label{orddens} Профиль плотности водного слоя (пунктирная линия) и средние ориентационные характеристики дипольного момента молекул воды: средний косинус угла с нормалью (пунктирно-точечная линия),  параметр порядка $P_2(\cos(\theta))$ (сплошная линия). }
+   1 \caption{\label{system} Мгновенное изображение модели системы с границей раздела вода/пар в периодической ячейке. Наиболее длинная сторона ячейки совпадает с нормалью к границе раздела (ось Z).}
+   1 \chapter{Очень длинное название второго приложения, в~котором продемонстрирована работа с~длинными таблицами}\label{app:B}
+   1 \chapter{Расчет свободной энергии гидратации и адсорбции аминокислот} \label{part3_free_energy}
+   1 \chapter{Методы молекулярного и интегративного моделирования в структурной биологии} \label{chapt1_mod_methods}
+   1 \chapter{Примеры вставки листингов программного кода}\label{app:A}
+   1 \chapter{Применение методов молекулярной динамики для изучения нуклеосом} \label{part2_supermd}
+   1 \chapter{Моделирование комплексов нуклеосом с белками хроматина} \label{part6_nucl_complex}
+   1 \chapter{Интегративное моделирование с применением данных экспериментов по футпринтингу ДНК} \label{part5_hrf}
+   1 \chapter{Интегративное моделирование амилоидоподобных фибрилл} \label{part4_amyloid}
+   1 \label{GAE}
+   1 \label{TI_equal}
+   1 \label{TI}
+   2 \label{ads_fe_eq}
+   1 \label{beneq}
+   1 \label{cap_wave_dep}
+   1 \label{chem_pot}
+   2 \label{erf_prof}
+   2 \label{excess}
+   1 \label{exp_GE_conc_ratio}
+   1 \label{fe_prof}
+   1 \label{fep_equal}	
+   1 \label{fig:p5:p5_2_f1}
+   1 \label{gibbsFE}
+   1 \label{hydr_energy_exp}
+   1 \label{hydr_fe_expr}
+   1 \label{hydr_fe_sim}
+   1 \label{langevin}
+   1 \label{mf}
+   1 \label{non-bond}
+   1 \label{pot_ener}
+   1 \label{probab}
+   1 \label{pseudoH}
+   1 \label{sec:p1:int_algo}
+   1 \label{tbl:p2_3:systems}
+   1 \newcommand{\figlabelsep}{~\cyrdash\ }  % (ГОСТ 2.105, 4.3.1)
+   1 \newcommand{\splitformatlabel}{\raggedleft}
+   1 \newcommand{\tablabelsep}{~\cyrdash\ }
+   1 \section{И ещё один подраздел приложения}~\label{app:B6}
+   1 \section{Ещё один подраздел приложения}\label{app:B2}
+   1 \section{Методы атомистического суперкомпьютерного моделирования} \label{part1_1_md}
+   1 \section{Очередной подраздел приложения}~\label{app:B5}
+   1 \section{Подраздел приложения}\label{app:B1}
+   1 \section{Стандартные префиксы ссылок}\label{app:B4}
+   1 \section{Использование длинных таблиц с окружением \textit{longtabu}}\label{app:B2a}
+   1 \section{Форматирование внутри таблиц}\label{app:B3}
+   1 \subsection{\label{ads_fe_theory}Энергии адсорбции}
+   1 \subsection{\label{hfe_theor_backgr}К вопросу вычисления энергий гидратации}
+   1 \subsection{\label{pmf_theor_backgr}Теория профилей свободной энергии}
+   1 \subsection{\label{sec:comp_correl}Корреляционный анализ }
+   1 \subsection{\label{sec:comp_exp}Количественные результаты}
+   1 \subsection{\label{sec:fep_method} Расчёт профилей свободной энергии}
+   1 \subsection{\label{sec:fep_res}Профили свободной энергии}
+   1 \subsection{\label{sec:forcefield}Силовое поле и модель}
+   1 \subsection{\label{sec:hfe_method} Расчёт энергий гидратации}
+   1 \subsection{\label{sec:simprot}МД протокол}
+   1 \subsection{\label{sec:wat_res}Свойства водного слоя}
+   1 Например, \verb+\label{fig:knuth}+; \verb+\ref{tab:test1}+; \verb+label={lst:external1}+.
+   1 Например, \verb+\label{fig:scheemes/my_scheeme}+ или \\ \verb+\label{lst:dts/linked_list}+.
+   1 Общепринятым является следующий формат ссылок: \texttt{<prefix>:<label>}.

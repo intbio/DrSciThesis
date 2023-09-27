@@ -1,0 +1,2 @@
+ffmpeg -i cennuc.mov  -i mask.png -filter_complex "[0:v][1:v] overlay" test.mov
+ffmpeg -i test.mov -filter:v "crop=615:600:181:139" cennuc%d.jpg

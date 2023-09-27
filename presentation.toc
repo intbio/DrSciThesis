@@ -1,0 +1,16 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{Введение}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Цель и задачи работы}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Положения, выносимые на защиту}{4}{0}{1}
+\beamer@sectionintoc {2}{Глава 1. Методы молекулярного и интегративного модели­рования в структурной биологии.}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Методы моделирования: возможности и ограничения}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Интегративные подходы}{9}{0}{2}
+\beamer@sectionintoc {3}{Глава 2. Применение методов молекулярной динамики для изучения нуклеосом.}{10}{0}{3}
+\beamer@sectionintoc {4}{Глава 3. Интегративное моделирование с применением данных экспериментов по футпринтингу ДНК.}{14}{0}{4}
+\beamer@sectionintoc {5}{Глава 4. Моделирование комплексов нуклеосом с белками хроматина.}{18}{0}{5}
+\beamer@sectionintoc {6}{Глава 5. Интегративное моделирование амилоидоподобных фибрилл.}{22}{0}{6}
+\beamer@sectionintoc {7}{Заключение}{27}{0}{7}
+\beamer@subsectionintoc {7}{1}{Обсуждение результатов}{27}{0}{7}
+\beamer@subsectionintoc {7}{2}{Выводы работы}{28}{0}{7}
+\beamer@subsectionintoc {7}{3}{Основные публикации}{30}{0}{7}
