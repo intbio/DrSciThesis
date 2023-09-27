@@ -1,4 +1,11 @@
-LaTeX-шаблон/пример для русской кандидатской/докторской диссертации и её автореферата.
+# Исходный код докторской диссертации А.К. Шайтана
+
+Диссретация создана на оснвое шаблона [Russian-Phd-LaTeX-Dissertation-Template](https://github.com/AndreyAkinshin/Russian-Phd-LaTeX-Dissertation-Template) с модификациями, описанными ниже.
+
+- [Диссертация](dissertation.pdf)
+- [Автореферат](synopsis_booklet.pdf)
+- [Презентация](presentation.pdf)
+
 
 ## Модификации относительно оригинального шаблона:
 
